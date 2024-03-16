@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://kit.fontawesome.com/362991c868.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assetes/images/favicon.png">
+    <title>SF Airlines</title>
+</head>
+
+<body>
+
+    <main>
+        
+        <nav class="w-full h-20 border-b-8 flex justify-between z-50 bg-white fixed">
+            <img src="./assetes/images/nav-img.gif" alt="">
+
+            <div class="w-full h-20 items-center justify-end mr-3 hidden max-[700px]:flex">
+                <div id="toggleNavOff" class="hidden">
+                    <i class="text-blue-600 fa-solid fa-x fa-xl"></i>
+                </div>
+                <div id="toggleNavOn">
+                    <i class="text-blue-600 fa-solid fa-bars fa-xl"></i>
+                </div>
+            </div>
+
+            <ul id="toggleNav"
+                class="flex items-center mr-10 bg-white max-[700px]:flex-col max-[700px]:absolute max-[700px]:right-0 max-[700px]:w-56 max-[700px]:mr-2 max-[700px]:mt-20 max-[700px]:rounded-b-2xl  max-[700px]:border-t-0  max-[700px]:border-4">
+
+                <a href="index.html">
+                    <li
+                        class="px-3 cursor-pointer border-b-2 border-blue-700  hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                        Home
+                    </li>
+                </a>
+                <a href="booking.html">
+                    <li
+                        class="relative px-3 cursor-pointer border-white hover:bg-gradient-to-b from-blue-100 to-blue-500  hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                        Booking
+                    </li>
+                </a>
+                <a href="blogs.html">
+                    <li
+                        class=" cursor-pointer border-white hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                        Blogs
+                    </li>
+                </a>
+                <a href="aboutus.html">
+                    <li
+                        class="px-3 cursor-pointer  border-white hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                        About Us</li>
+                </a>
+                <a href="contact.html">
+                    <li
+                        class="px-3 cursor-pointer border-white  hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                        Contact
+                    </li>
+                </a>
+
+
+            </ul>
+        </nav>
+
+        <div class=" w-full h-20 bg-white"></div>
+
+        <div
+            class="infinite-scroller flex w-full h-20 bg-blue-700 items-center justify-center whitespace-nowrap opacity-90 cursor-none p-6 overflow-hidden">
+            <div class="infinite-slider h-16 w-5/6 flex">
+                <h3 class=" mr-7 border-white border-2 p-5 shadow-xl rounded-md text-white">We provide the best services
+                </h3>
+                <h3 class=" mr-7 border-white border-2 p-5 shadow-xl rounded-md text-white">Come Fly With Us</h3>
+                <h3 class=" mr-7 border-white border-2 p-5 shadow-xl rounded-md text-white">Your safety Our garrenttee
+                </h3>
+                <h3 class=" mr-7 border-white border-2 p-5 shadow-xl rounded-md text-white">Best flying service u can
+                    find</h3>
+                <h3 class=" mr-7 border-white border-2 p-5 shadow-xl rounded-md text-white">We provide the best services
+                </h3>
+                <h3 class=" mr-7 border-white border-2 p-5 shadow-xl rounded-md text-white">Come Fly With Us</h3>
+                <h3 class=" mr-7 border-white border-2 p-5 shadow-xl rounded-md text-white">Your safety Our garrenttee
+                </h3>
+                <h3 class=" mr-7 border-white border-2 p-5 shadow-xl rounded-md text-white">Best flying service u can
+                    find</h3>
+                <h3 class=" mr-7 border-white border-2 p-5 shadow-xl rounded-md text-white">We provide the best services
+                </h3>
+                <h3 class=" mr-7 border-white border-2 p-5 shadow-xl rounded-md text-white">Come Fly With Us</h3>
+                <h3 class=" mr-7 border-white border-2 p-5 shadow-xl rounded-md text-white">Your safety Our garrenttee
+                </h3>
+                <h3 class=" mr-7 border-white border-2 p-5 shadow-xl rounded-md text-white">Best flying service u can
+                    find</h3>
+            </div>
+        </div>
+
+        <section class="relative flex flex-col items-center w-full h-auto cursor-pointer">
+            <swiper-container class="mySwiper w-full h-64" pagination="true" pagination-clickable="true"
+                space-between="30" effect="fade" navigation="true" loop="true" autoplay="true" delay="3000">
+                <swiper-slide>
+                    <img class="w-full h-full" src="./assetes/images/istanbulBanner.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img class="h-full w-full" src="./assetes/images/najaf.jpg" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img class="w-full h-full" src="./assetes/images/book_umrah.jpg" />
+                </swiper-slide>
+            </swiper-container>
+        </section>
+
+        <!--Form-->
+
+        <section class="w-full h-auto p-5 flex flex-col justify-center items-center cursor-default">
+            <h1 class="font-bold text-5xl text-center">Join Us <span class="text-blue-500">Today</span></h1>
+            <div class="w-full h-auto p-7 flex justify-evenly max-[950px]:flex-col-reverse max-[420px]:p-1">
+                <div
+                    class="w-1/3 h-auto  max-[950px]:w-full  max-[950px]:flex  max-[950px]:justify-center max-[950px]:mt-5">
+
+                    <form action="#" class="p-5">
+                        <h1 class="text-center text-4xl font-semibold">Regis<span class="text-blue-500">ter</span></h1>
+                        <div class="flex flex-col mt-3">
+                            <label for="mail" class="text-2xl text-blue-500">Email</label>
+                            <input id="logInMail" type="email"
+                                class="p-2 rounded-xl border-2 border-blue-300 focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div class="flex flex-col mt-3">
+                            <label for="password" class="text-2xl text-blue-500">Create Password</label>
+                            <input id="logInPass" type="password" maxlength="8"
+                                class="p-2 rounded-xl border-2 border-blue-300 focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div class="flex flex-col mt-3">
+                            <label for="password" class="text-2xl text-blue-500">Confirm Password</label>
+                            <input id="logInConfirmPass" type="password" maxlength="8"
+                                class="p-2 rounded-xl border-2 border-blue-300 focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div class="cursor-pointer p-2 flex items-center justify-center">
+                            <label for="rmbr"><span class="text-blue-500 ">Remember</span> me</label>
+                            <input type="checkbox" id="rmbr" name="rmbr" class="ml-2">
+                        </div>
+                        <div class="w-full flex justify-center">
+                            <h1 id="passWarning"
+                                class="text-center w-1/2 mt-3 mb-5 text-red-600 border-2 border-red-600 rounded-xl p-2 hidden">
+                                Kindly verify your password again</h1>
+                        </div>
+                        <div class="w-full flex justify-center">
+                            <button type="submit" id="logInButton"
+                                class="mt-2 ske relative flex justify-center text-white bg-gradient-to-r from-blue-600 to-blue-400 p-5 border-2 border-white rounded ske overflow-hidden">Register</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div
+                    class="w-1/2 h-auto bg-slate-200 p-10 rounded-lg shadow-6 mt-2 max-[950px]:w-full  max-[950px]:h-auto]">
+                    <div class="w-full h-full border-l-4 border-blue-500 p-5 text-black">
+                        <h1 class="text-3xl font-semibold text-blue-500"><span
+                                class="text-yellow-400">Professional</span> And <span
+                                class="text-yellow-400">Relaible</span> Airport Transfers</h1>
+                        <ul class="capitalize space-y-3 mt-4 text-lg">
+                            <li><i class="fa-solid fa-shield-halved text-blue-500 font-semibold"></i> Secure Online
+                                Payments</li>
+                            <li><i class="fa-regular fa-face-smile text-blue-500 font-semibold"></i> Meet and greet</li>
+                            <li><i class="fa-solid fa-power-off text-blue-500 font-semibold"></i> Free cancelation</li>
+                            <li><i class="fa-solid fa-plane text-blue-500 font-semibold"></i> Flight Monitoring</li>
+                            <li><i class="fa-solid fa-sun text-blue-500 font-semibold"></i> Day hire</li>
+                            <li><i
+                                    class="fa-solid fa-person-military-to-person text-blue-500 font-semibold"></i>Door-to-Door
+                                Service</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps -->
+
+        <section class="w-full h-auto flex justify-center items-center">
+            <div
+                class="w-full h-auto p-5 flex justify-center items-center bg-gradient-to-t from-slate-500 to-transparent">
+                <img class="w-[70%] max-[890px]:w-5/6 max-[890px]:mt-5" src="./assetes/images/steps.png">
+            </div>
+        </section>
+
+        <!-- About Our Company -->
+
+        <section
+            class="w-full h-screen flex pl-16 pr-16 pt-5 pb-5 mt-16 max-[800px]:h-auto max-[800px]:pb-0 max-[460px]:pl-5 max-[460px]:pr-5 max-[700px]:h-auto max-[700px]:pb-36 max-[520px]:pb-[540px] max-[426px]:pb-[600px] max-[390px]:pb-[700px]">
+            <div class="relative w-1/2 h-full max-[800px]:hidden">
+                <div class="w-3/4 h-3/4 bg-black max-[990px]:w-full">
+                    <img class="h-full" src="./assetes/images/bus2.avif" alt="">
+                </div>
+                <div class="absolute bottom-0 right-0 border-4 border-white z-40 w-1/2 h-2/4 max-[990px]:w-2/3">
+                    <img class="w-full h-full" src="./assetes/images/bus3.jpg" alt="">
+                </div>
+            </div>
+            <div
+                class="w-1/2 h-auto  p-5 pt-10 max-[800px]:w-full max-[800px]:flex max-[800px]:items-center max-[800px]:justify-center flex-col max-[460px]:p-0">
+                <h1 class="capitalize text-blue-800 text-xl mb-5">About our company</h1>
+                <h1 class="uppercase font-bold text-5xl text-slate-600 self-start">from OUR<br> Bussiness Partners</h1>
+                <div class="shadow-6 w-full h-auto p-7 mt-7 mb-7">
+                    <q>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quisquam molestiae ullam velit
+                        quidem? Eligendi impedit culpa saepe explicabo, itaque sunt, commodi quibusdam necessitatibus ex
+                        sequi tenetur obcaecati. Incidunt commodi aspernatur.</q>
+                </div>
+                <p class="text-xl text-slate-900 max-[456px]:text-center">Well maintained high quality vehicles,
+                    professional drivers fully
+                    attended to customer's needs make our airport transfer service one of the best. All our vehicles are
+                    comfortable, equipped with air conditioning and navigation systems.</p>
+            </div>
+        </section>
+
+        <!-- Services -->
+
+        <section
+            class="w-full h-screen p-5 flex flex-col justify-center items-center mt-28 max-[958px]:mt-56 max-[800px]:mt-12 max-[700px]:mb-36 max-[700px]:mt-20 max-[520px]:mb-[600px] max-[394px]:pb-56">
+            <h1 class="text-blue-500 font-bold text-6xl text-center"><span class="text-yellow-400">Our</span> Service
+            </h1>
+            <p class="text-lg text-slate-500 text-center mt-4 font-semibold">From the first click on the booking form
+                and till the moment you step out the auto<br> at your destination it couldn't be any simpler:</p>
+            <div
+                class="w-5/6 h-auto  p-5 flex flex-col justify-between max-[890px]:w-full max-[700px]:flex-row max-[520px]:flex-col">
+
+                <div class="w-full h-auto mb-3 flex justify-between max-[700px]:flex-col">
+                    <div
+                        class="w-[32%] h-64  bg-[url('./assetes/images/steps-img.webp')] bg-cover bg-center bg-no-repeat max-[700px]:w-full m-2">
+                        <div
+                            class="w-full h-full flex items-end bg-gradient-to-t from-blue-500 to-transparent hover:bg-gradient-to-b hover:from-slate-400 hover:to-transparent max-[700px]:w-full">
+                            <h1 class="font-semibold text-2xl text-white">We provide the<br>best driving services</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[32%] h-64  bg-[url('./assetes/images/service_car.webp')] bg-cover bg-center bg-no-repeat max-[700px]:w-full m-2">
+                        <div
+                            class="w-full h-full flex items-end bg-gradient-to-t from-blue-500 to-transparent hover:bg-gradient-to-b hover:from-slate-400 hover:to-transparent max-[700px]:w-full">
+                            <h1 class="font-semibold text-2xl text-white">We provide the<br>best driving services</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[32%] h-64  bg-[url('./assetes/images/meet_and_greet.jpg')] bg-cover bg-center bg-no-repeat m-2 max-[700px]:w-full">
+                        <div
+                            class="w-full h-full flex items-end bg-gradient-to-t from-blue-500 to-transparent hover:bg-gradient-to-b hover:from-slate-400 hover:to-transparent max-[690px]:w-full">
+                            <h1 class="font-semibold text-2xl text-white">We provide the<br>best driving services</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="w-full h-auto mb-3 flex justify-between max-[700px]:flex-col max-[700px]:ml-3 max-[520px]:ml-0">
+                    <div
+                        class="w-[32%] h-64  bg-[url('./assetes/images/customer-care-1.jpg')] bg-cover bg-center bg-no-repeat max-[700px]:w-full m-2">
+                        <div
+                            class="w-full h-full flex items-end bg-gradient-to-t from-blue-500 to-transparent hover:bg-gradient-to-b hover:from-slate-400 hover:to-transparent">
+                            <h1 class="font-semibold text-2xl text-white">We provide the<br>best driving services</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[32%] h-64  bg-[url('./assetes/images/baby_car.jpg')] bg-cover bg-center bg-no-repeat max-[700px]:w-full m-2">
+                        <div
+                            class="w-full h-full flex items-end bg-gradient-to-t from-blue-500 to-transparent hover:bg-gradient-to-b hover:from-slate-400 hover:to-transparent">
+                            <h1 class="font-semibold text-2xl text-white">We provide the<br>best driving services</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[32%] h-64  bg-[url('./assetes/images/steps-img.webp')] bg-cover bg-center bg-no-repeat max-[700px]:w-full m-2">
+                        <div
+                            class="w-full h-full flex items-end bg-gradient-to-t from-blue-500 to-transparent hover:bg-gradient-to-b hover:from-slate-400 hover:to-transparent">
+                            <h1 class="font-semibold text-2xl text-white">We provide the<br>best driving services</h1>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--Be with Us-->
+
+        <section class="w-full h-screen 
+             bg-[url(./assetes/images/carlocation.webp)] bg-fixed bg-cover bg-center bg-no-repeat">
+            <div
+                class="relative w-full h-full bg-gradient-to-t from-black to-transparent flex justify-center items-center">
+                <svg class="absolute top-0 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#fff" fill-opacity="1"
+                        d="M0,128L48,144C96,160,192,192,288,197.3C384,203,480,181,576,176C672,171,768,181,864,165.3C960,149,1056,107,1152,128C1248,149,1344,235,1392,277.3L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                    </path>
+                </svg>
+
+                <h1 class="text-7xl font-bold font-outline-1 text-transparent">BE WITH US.</h1>
+
+                <svg class="absolute bottom-0 -mb-1
+                " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#fff" fill-opacity="1"
+                        d="M0,128L48,144C96,160,192,192,288,197.3C384,203,480,181,576,176C672,171,768,181,864,165.3C960,149,1056,107,1152,128C1248,149,1344,235,1392,277.3L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="w-full h-56 bg-white relative pt-5">
+        <svg class="w-full h-full absolute right-0 top-0 z-30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 320">
+            <path fill="#3b82f6" fill-opacity="1"
+                d="M0,160L40,181.3C80,203,160,245,240,261.3C320,277,400,267,480,272C560,277,640,299,720,293.3C800,288,880,256,960,213.3C1040,171,1120,117,1200,85.3C1280,53,1360,43,1400,37.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+
+        <svg class="w-full h-full absolute left-0 bottom-0 z-20" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#3b82f6" fill-opacity="1"
+                d="M0,192L40,165.3C80,139,160,85,240,53.3C320,21,400,11,480,10.7C560,11,640,21,720,42.7C800,64,880,96,960,138.7C1040,181,1120,235,1200,261.3C1280,288,1360,288,1400,288L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+
+    </div>
+
+    <footer class="w-full h-auto flex flex-col items-center pb-5 bg-blue-500 overflow-hidden">
+        <div class="flex w-[95%] h-full border-b-2 border-white rounded-lg max-[940px]:flex-col">
+            <div class="w-[70%] h-auto flex max-[940px]:w-full max-[602px]:flex-col">
+                <div class="flex flex-col w-1/2 text-white max-[602px]:w-full max-[602px]:text-center">
+                    <h1 class="text-xl font-bold">For any Further Enquires:</h1>
+                    <h1 class="text-lg font-bold mb-2">Contact:</h1>
+                    <hr class="ml-2 mr-2">
+                    <div class="flex mt-3 mb-2">
+                        <i class="fa-solid fa-envelope "></i>
+                        <p class="ml-1">SFAirlines@gmail.com</p>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fa-solid fa-phone "></i>
+                        <p class="ml-1">051-11-111-1</p>
+                    </div>
+                    <div class="flex  mb-2">
+                        <i class="fa-solid fa-globe"></i>
+                        <p class="ml-1">www.SF Airlines.com.pk</p>
+                    </div>
+                    <hr class="ml-2 mr-2">
+                    <h1 class="text-xl font-bold mt-3">About Us.</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis veritatis quo aut, sunt
+                        porro
+                        ipsa Lorem ipsum dolor sit amet consectetur.</p>
+                    <div>
+                        <i class="fa-solid fa-star  text-yellow-500"></i><i
+                            class="fa-solid fa-star text-yellow-500"></i><i
+                            class="fa-solid fa-star text-yellow-500"></i><i
+                            class="fa-solid fa-startext-yellow-500"></i><i class="fa-solid fa-star text-yellow-500"><i
+                                class="fa-regular fa-star-half-stroke text-yellow-500"></i></i>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col w-1/2 text-white max-[602px]:w-full max-[602px]:items-center max-[602px]:text-center">
+                    <h1 class="mb-3 font-bold text-2xl text-center">Payement Methods<i
+                            class="fa-solid fa-money-check-dollar text-green-500 ml-2"></i></h1>
+                    <div class="flex flex-col w-full h-36 p-3">
+                        <div class="w-full h-1/2 flex">
+                            <div class="w-1/4 h-full  rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/visapay.png">
+                            </div>
+                            <div class="w-1/4 h-full  rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/mastercard.png">
+                            </div>
+                            <div class="w-1/4 h-full  rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/nayapay.jpg">
+                            </div>
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/easypasia.jpg">
+                            </div>
+                        </div>
+                        <div class="w-full h-1/2 flex mt-2">
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl" src="./assetes/images/stripe.png">
+                            </div>
+                            <div class="w-1/4 h-full bg-white rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/unionpay.png">
+                            </div>
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl" src="./assetes/images/paypal.png">
+                            </div>
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/banktransfer.png">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="m-2">
+                    <h1 class="text-red-500 font-extrabold">Note:</h1>
+                    <p>For any issues regarding your payments/Funds Transfer to our Airlines.Kindly immediatly reach to
+                        our
+                        <br><a class="text-blue-900 underline cursor-pointer">Customer Care</a>
+                    </p>
+                </div>
+            </div>
+            <div class="w-1/3 h-full  flex p-2 text-white max-[940px]:w-full max-[602px]:mt-5">
+                <div class="w-1/2 h-full ">
+                    <ul class="space-y-2 cursor-pointer">
+                        <h2 class="font-extrabold cursor-default">Company:</h2>
+                        <hr class=" mr-2">
+                        <li class="underline-effect">Contacts</li>
+                        <li class="underline-effect">About</li>
+                        <li class="underline-effect">FAQs</li>
+                        <li class="underline-effect">Blogs</li>
+                        <li class="underline-effect">Available Jobs</li>
+                        <li class="underline-effect">Access Booking</li>
+                        <li class="underline-effect">Terms and Conditions</li>
+                        <li class="underline-effect">Pricvacy Policy</li>
+                    </ul>
+                </div>
+                <div class="w-1/2 h-full">
+                    <ul class="space-y-2 cursor-pointer">
+                        <h2 class=" font-extrabold cursor-default whitespace-nowrap">Airport Transport:</h2>
+                        <hr>
+                        <li class="underline-effect">Luton Airport</li>
+                        <li class="underline-effect">Stansted Airport</li>
+                        <li class="underline-effect">Heathrow Airport</li>
+                        <li class="underline-effect">Gatwick Airport</li>
+                        <li class="underline-effect">Stansted Airport</li>
+                        <li class="underline-effect">Gatwick Airport</li>
+                        <li class="underline-effect">Birmingham Airport</li>
+                        <li class="underline-effect">Taxi Prices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-blue-950">&copy; SF Airlines | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

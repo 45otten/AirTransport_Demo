@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://kit.fontawesome.com/362991c868.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assetes/images/favicon.png">
+    <title>SF | About us</title>
+</head>
+
+<body>
+    <nav class="w-full h-20 border-b-8 flex justify-between z-50 bg-white fixed">
+        <img src="./assetes/images/nav-img.gif" alt="">
+
+        <div class="w-full h-20 items-center justify-end mr-3 hidden max-[700px]:flex">
+            <div id="toggleNavOff" class="hidden">
+                <i class="text-blue-600 fa-solid fa-x fa-xl"></i>
+            </div>
+            <div id="toggleNavOn">
+                <i class="text-blue-600 fa-solid fa-bars fa-xl"></i>
+            </div>
+        </div>
+
+        <ul id="toggleNav"
+            class="flex items-center mr-10 bg-white max-[700px]:flex-col max-[700px]:absolute max-[700px]:right-0 max-[700px]:w-56 max-[700px]:mr-2 max-[700px]:mt-20 max-[700px]:rounded-b-2xl  max-[700px]:border-t-0  max-[700px]:border-4">
+
+            <a href="index.html">
+                <li
+                    class="px-3 cursor-pointer hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    Home
+                </li>
+            </a>
+            <a href="booking.html">
+                <li
+                    class="relative px-3 cursor-pointer border-white hover:bg-gradient-to-b from-blue-100 to-blue-500  hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    Booking
+                </li>
+            </a>
+            <a href="blogs.html">
+                <li
+                    class=" cursor-pointer border-white hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    Blogs
+                </li>
+            </a>
+            <a href="aboutus.html">
+                <li
+                    class="px-3 cursor-pointer border-b-2 border-blue-700 hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    About Us</li>
+            </a>
+            <a href="contact.html">
+                <li
+                    class="px-3 cursor-pointer border-white  hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    Contact
+                </li>
+            </a>
+
+        </ul>
+    </nav>
+
+    <main class="w-full h-auto">
+        <section class="w-full h-auto bg-[url('./assetes/images/main5.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
+            <div class=" pb-5 flex justify-center w-full h-full bg-gradient-to-t from-black to-transparent">
+                <div class="w-5/6 h-auto mt-28">
+                    <div class="flex items-center w-full h-auto">
+                        <div
+                            class="light-slide w-1/3 h-full border-4 rounded border-blue-500 shadow-4 bg-[url('./assetes/images/main6.jpg')] bg-cover bg-center bg-no-repeat max-[1305px]:hidden">
+                        </div>
+                        <div class="w-5/6 h-auto ml-8 pl-5 pr-5 border-l-2 border-white max-[1013px]:w-full">
+                            <h2 class="text-blue-500 font-bold text-4xl">About Us<span
+                                    class="text-yellow-500">.</span><span class="text-blue-500">.</span><span
+                                    class="text-red-500">.</span></h2>
+                            <hr class=" border-2 border-blue-500 rounded mt-2 mb-2">
+                            <p class="font-semibold text-white">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis aperiam, placeat ex
+                                eligendi architecto dicta ducimus, corporis, quaerat sed ullam modi! Aliquam Lorem ipsum
+                                dolor sit, amet consectetur adipisicing elit. Ut ad voluptatum facere explicabo. Odio
+                                eveniet quia maiores perferendis nostrum laborum! Numquam esse distinctio assumenda
+                                nihil laudantium consectetur tempore mollitia corporis.
+                            </p>
+                            <hr class=" border-2 border-blue-500 rounded mt-2 mb-2">
+                            <div
+                                class="w-full h-auto flex justify-between max-[880px]:flex-col max-[880px]:items-center">
+                                <div
+                                    class="flex items-center w-[32%] h-28 border-2 rounded-lg shadow-4 text-white bg-gradient-rating1 scale-animation max-[880px]:w-full max-[880px]:justify-center">
+                                    <img src="./assetes/images/5-Star-Airline.png" class="h-full">
+                                    <div class="ml-1">
+                                        <h2 class="font-ProtestRevolution mt-2">SkyTrax</h2>
+                                        <p class="w-full text-xs">Internation Airlines Standards</p>
+                                        <hr>
+                                        <p>2021-2023</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[32%] h-28 border-2 text-white rounded-lg shadow-4 flex   items-center bg-gradient-rating2 scale-animation max-[880px]:mt-3 max-[880px]:mb-3 max-[880px]:w-full max-[880px]:justify-center">
+                                    <img src="./assetes/images/care_edge_group_logo.png" class="h-full">
+                                    <div class="ml-1">
+                                        <h2 class="font-Caveat mt-2">Care Edge</h2>
+                                        <p class="w-full text-xs">Knowledge-based Analytical Group</p>
+                                        <hr>
+                                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-regular fa-star-half-stroke"></i></p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[32%] h-28 border-2 rounded-lg shadow-4 text-white flex items-center bg-gradient-rating3 scale-animation  max-[880px]:w-full max-[880px]:justify-center">
+                                    <img src="./assetes/images/data-raid.png" class="h-full">
+                                    <div class="ml-1">
+                                        <h2 class="font-lobster mt-2">Data Raid</h2>
+                                        <p class="w-full text-xs">Review Based Rankings</p>
+                                        <hr>
+                                        <p class="text-s">4.7/5 <i class="fa-solid fa-thumbs-up"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center w-full h-auto mt-7">
+                        <div class="w-2/3 h-auto mr-8 pl-5 pr-5 border-r-2 border-white max-[1050px]:w-full">
+                            <h2 class="text-blue-500 font-bold text-4xl capitalize">What we provide<span
+                                    class="text-yellow-500">.</span><span class="text-blue-500">.</span><span
+                                    class="text-red-500">.</span></h2>
+                            <hr class=" border-2 border-blue-500 rounded mt-2 mb-2">
+                            <ul class="font-semibold capitalize text-white list-disc ml-5">
+                                <li class="mt-2 mb-2">airport transport</li>
+                                <li class="mt-2 mb-2">luxurious suits</li>
+                                <li class="mt-2 mb-2">In-flight Entertainment (IFE)</li>
+                                <li class="mt-2 mb-2">Comfort Amenities</li>
+                                <li class="mt-2 mb-2">Dining and Refreshments</li>
+                                <li class="mt-2 mb-2">Lounge Access</li>
+                                <li class="mt-2 mb-2">Health and Wellness</li>
+                            </ul>
+                            <hr class=" border-2 border-blue-500 rounded mt-2 mb-2">
+                            <h2 class="capitalize mt-2 font-extrabold text-3xl font-Caveat text-white">SF airlines hence
+                                we provide the best<span class="text-white"> . <i
+                                        class="fa-solid fa-pen-nib"></i></span></h2>
+
+                        </div>
+                        <div
+                            class="light-slide w-1/3 h-full border-4 rounded border-blue-500 shadow-4 bg-[url('./assetes/images/main8.jpeg')] bg-cover bg-center bg-no-repeat max-[1050px]:hidden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- where we fly -->
+
+        <section class="p-14 w-full h-auto bg-white flex justify-center max-[456px]:p-4">
+            <div class="w-[95%] h-auto flex flex-col items-center max-[456px]:w-full">
+                <h2 class="capitalize mt-5 text-5xl font-bold text-blue-500 text-center">our airports</h2>
+                <div class="w-full h-auto max-[1298px]:flex max-[810px]:flex-col">
+                    <div
+                        class="w-full h-auto  flex items-center justify-between mt-5 max-[1298px]:flex-col max-[810px]:w-full">
+                        <div
+                            class="cityAirportHover w-[32%] h-auto overflow-hidden rounded-2xl border-4 border-blue-400 max-[1298px]:w-[90%] max-[1298px]:mt-3 mb-3">
+                            <div class="airportCitySlider relative w-full h-56 bg-blue-900 overflow-hidden">
+                                <div
+                                    class="citySlide absolute text-center text-4xl font-bold w-full h-1/2 bg-[url('./assetes/images/main9.1.jpg')] bg-cover bg-center bg-no-repeat border-t-8 z-40 border-green-50 bg-black top-[50%]">
+                                    <h1 class="uppercase font-outline-1 text-transparent">Islamabad</h1>
+                                </div>
+                                <img class="w-full h-full scale-animation" src="./assetes/images/main9.jpg">
+                            </div>
+                            <div class="w-full h-1/4 bg-white p-2">
+                                <h2 class="text-center text-2xl font-bold">Islamabad</h2>
+                                <hr>
+                                <div id="islMapToggle"
+                                    class=" hover:text-blue-500 w-full h-10 flex justify-center items-center">
+                                    <i class="fa-xl fa-solid fa-location-dot"></i>
+                                    <div class="ml-1 cursor-pointer">
+                                        <p>Show Location</p>
+                                    </div>
+                                </div>
+                                <div id="islMap" class="hidden w-full h-44 justify-center">
+                                    <div
+                                        class="w-[95%] h-5/6 bg-black rounded-lg border-2 border-blue-500 overflow-hidden">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26616.51962581134!2d73.0950730545029!3d33.499687172913944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df8d52d433e973%3A0xaba6772089d0d092!2sStatue%20of%20Liberty!5e0!3m2!1sen!2s!4v1708957119318!5m2!1sen!2s"
+                                            width="100%" height="inherit" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="cityAirportHover w-[32%] h-auto overflow-hidden rounded-2xl border-4 border-blue-400 max-[1298px]:w-[90%] max-[1298px]:mt-3 mb-3">
+                            <div class="airportCitySlider relative w-full h-56 bg-blue-900 overflow-hidden">
+                                <div
+                                    class="citySlide absolute text-center text-4xl font-bold w-full h-1/2 bg-[url('./assetes/images/main10.1.jpg')] bg-cover bg-center bg-no-repeat border-t-8 z-40 border-green-50 bg-black top-[50%]">
+                                    <h1 class="uppercase font-outline-1 text-transparent">lahore</h1>
+                                </div>
+                                <img class="w-full h-full scale-animation" src="./assetes/images/main10.jpeg">
+                            </div>
+                            <div class="w-full h-1/4 bg-white p-2">
+                                <h2 class="text-center text-2xl font-bold">lahore</h2>
+                                <hr>
+                                <div id="islMapToggle"
+                                    class=" hover:text-blue-500 w-full h-10 flex justify-center items-center">
+                                    <i class="fa-xl fa-solid fa-location-dot"></i>
+                                    <div class="ml-1 cursor-pointer">
+                                        <p>Show Location</p>
+                                    </div>
+                                </div>
+                                <div id="islMap" class="hidden w-full h-44 justify-center">
+                                    <div
+                                        class="w-[95%] h-5/6 bg-black rounded-lg border-2 border-blue-500 overflow-hidden">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26616.51962581134!2d73.0950730545029!3d33.499687172913944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df8d52d433e973%3A0xaba6772089d0d092!2sStatue%20of%20Liberty!5e0!3m2!1sen!2s!4v1708957119318!5m2!1sen!2s"
+                                            width="100%" height="inherit" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="cityAirportHover w-[32%] h-auto overflow-hidden rounded-2xl border-4 border-blue-400 max-[1298px]:w-[90%] max-[1298px]:mt-3 mb-3">
+                            <div class="airportCitySlider relative w-full h-56 bg-blue-900 overflow-hidden">
+                                <div
+                                    class="citySlide absolute text-center text-4xl font-bold w-full h-1/2 bg-[url('./assetes/images/main11.1.jpg')] bg-cover bg-center bg-no-repeat border-t-8 z-40 border-green-50 bg-black top-[50%]">
+                                    <h1 class="uppercase font-outline-1 text-transparent">karachi</h1>
+                                </div>
+                                <img class="w-full h-full scale-animation" src="./assetes/images/main11.jpg">
+                            </div>
+                            <div class="w-full h-1/4 bg-white p-2">
+                                <h2 class="text-center text-2xl font-bold">karachi</h2>
+                                <hr>
+                                <div id="islMapToggle"
+                                    class=" hover:text-blue-500 w-full h-10 flex justify-center items-center">
+                                    <i class="fa-xl fa-solid fa-location-dot"></i>
+                                    <div class="ml-1 cursor-pointer">
+                                        <p>Show Location</p>
+                                    </div>
+                                </div>
+                                <div id="islMap" class="hidden w-full h-44 justify-center">
+                                    <div
+                                        class="w-[95%] h-5/6 bg-black rounded-lg border-2 border-blue-500 overflow-hidden">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26616.51962581134!2d73.0950730545029!3d33.499687172913944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df8d52d433e973%3A0xaba6772089d0d092!2sStatue%20of%20Liberty!5e0!3m2!1sen!2s!4v1708957119318!5m2!1sen!2s"
+                                            width="100%" height="inherit" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full h-auto  flex items-center justify-between mt-5 max-[1298px]:flex-col max-[810px]:w-full">
+                        <div
+                            class="cityAirportHover w-[32%] h-auto overflow-hidden rounded-2xl border-4 border-blue-400 max-[1298px]:w-[90%] max-[1298px]:mt-3 mb-3">
+                            <div class="airportCitySlider relative w-full h-56 bg-blue-900 overflow-hidden">
+                                <div
+                                    class="citySlide absolute text-center text-4xl font-bold w-full h-1/2 bg-[url('./assetes/images/main12.1.jpg')] bg-cover bg-center bg-no-repeat border-t-8 z-40 border-green-50 bg-black top-[50%]">
+                                    <h1 class="uppercase font-outline-1 text-transparent">multan</h1>
+                                </div>
+                                <img class="w-full h-full scale-animation" src="./assetes/images/main12.jpg">
+                            </div>
+                            <div class="w-full h-1/4 bg-white p-2">
+                                <h2 class="text-center text-2xl font-bold">Multan</h2>
+                                <hr>
+                                <div id="islMapToggle"
+                                    class=" hover:text-blue-500 w-full h-10 flex justify-center items-center">
+                                    <i class="fa-xl fa-solid fa-location-dot"></i>
+                                    <div class="ml-1 cursor-pointer">
+                                        <p>Show Location</p>
+                                    </div>
+                                </div>
+                                <div id="islMap" class="hidden w-full h-44 justify-center">
+                                    <div
+                                        class="w-[95%] h-5/6 bg-black rounded-lg border-2 border-blue-500 overflow-hidden">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26616.51962581134!2d73.0950730545029!3d33.499687172913944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df8d52d433e973%3A0xaba6772089d0d092!2sStatue%20of%20Liberty!5e0!3m2!1sen!2s!4v1708957119318!5m2!1sen!2s"
+                                            width="100%" height="inherit" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="cityAirportHover w-[32%] h-auto overflow-hidden rounded-2xl border-4 border-blue-400 max-[1298px]:w-[90%] max-[1298px]:mt-3 mb-3">
+                            <div class="airportCitySlider relative w-full h-56 bg-blue-900 overflow-hidden">
+                                <div
+                                    class="citySlide absolute text-center text-4xl font-bold w-full h-1/2 bg-[url('./assetes/images/main13.1.jpg')] bg-cover bg-center bg-no-repeat border-t-8 z-40 border-green-50 bg-black top-[50%]">
+                                    <h1 class="uppercase font-outline-1 text-transparent">Fasialabad</h1>
+                                </div>
+                                <img class="w-full h-full scale-animation" src="./assetes/images/main13.jpg">
+                            </div>
+                            <div class="w-full h-1/4 bg-white p-2">
+                                <h2 class="text-center text-2xl font-bold">Fasialabad</h2>
+                                <hr>
+                                <div id="islMapToggle"
+                                    class=" hover:text-blue-500 w-full h-10 flex justify-center items-center">
+                                    <i class="fa-xl fa-solid fa-location-dot"></i>
+                                    <div class="ml-1 cursor-pointer">
+                                        <p>Show Location</p>
+                                    </div>
+                                </div>
+                                <div id="islMap" class="hidden w-full h-44 justify-center">
+                                    <div
+                                        class="w-[95%] h-5/6 bg-black rounded-lg border-2 border-blue-500 overflow-hidden">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26616.51962581134!2d73.0950730545029!3d33.499687172913944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df8d52d433e973%3A0xaba6772089d0d092!2sStatue%20of%20Liberty!5e0!3m2!1sen!2s!4v1708957119318!5m2!1sen!2s"
+                                            width="100%" height="inherit" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="cityAirportHover w-[32%] h-auto overflow-hidden rounded-2xl border-4 border-blue-400 max-[1298px]:w-[90%] max-[1298px]:mt-3 mb-3">
+                            <div class="airportCitySlider relative w-full h-56 bg-blue-900 overflow-hidden">
+                                <div
+                                    class="citySlide absolute text-center  font-bold w-full h-1/2 bg-[url('./assetes/images/main14.1.jpg')] bg-cover bg-center bg-no-repeat border-t-8 z-40 border-green-50 bg-black top-[50%]">
+                                    <h1 class="uppercase font-outline-1 text-4xl text-transparent">peshawar</h1>
+                                </div>
+                                <img class="w-full h-full scale-animation" src="./assetes/images/main14.png">
+                            </div>
+                            <div class="w-full h-1/4 bg-white p-2">
+                                <h2 class="text-center text-2xl font-bold">Peshawar</h2>
+                                <hr>
+                                <div id="islMapToggle"
+                                    class=" hover:text-blue-500 w-full h-10 flex justify-center items-center">
+                                    <i class="fa-xl fa-solid fa-location-dot"></i>
+                                    <div class="ml-1 cursor-pointer">
+                                        <p>Show Location</p>
+                                    </div>
+                                </div>
+                                <div id="islMap" class="hidden w-full h-44 justify-center">
+                                    <div
+                                        class="w-[95%] h-5/6 bg-black rounded-lg border-2 border-blue-500 overflow-hidden">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26616.51962581134!2d73.0950730545029!3d33.499687172913944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df8d52d433e973%3A0xaba6772089d0d092!2sStatue%20of%20Liberty!5e0!3m2!1sen!2s!4v1708957119318!5m2!1sen!2s"
+                                            width="100%" height="inherit" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Public reviews -->
+
+        <section
+            class="flex justify-center w-full h-auto bg-[url(./asstes/images/review-img.jpg)] bg-cover bg-center bg-no-repeat bg-white pb-5">
+            <div class="flex flex-col items-center w-[90%] h-auto">
+                <h1 class="text-4xl text-blue-500 font-bold text-center">What people say about us</h1>
+                <hr class="border-blue-500 border-2 w-96 m-3">
+                <div
+                    class="flex justify-center items-center w-full h-auto border-l-4 border-r-4 border-blue-500 rounded-lg mt-7 max-[1004px]:flex-col">
+                    <div class=" flex max-[540px]:flex-col mb-3">
+                        <div
+                            class="flex flex-col w-56 h-auto bg-white border-2 rounded-xl ml-3 mr-3 scale-animation hover:shadow-5 mb-3">
+                            <img class="w-full h-44 rounded-t-xl" src="./assetes/images/review-img1.avif" alt="">
+                            <h1 class="text-lg text-blue-600 font-bold pt-2 text-center">Tiffany Brooks</h1>
+                            <hr class="ml-5 mr-5 border-2 border-black rounded">
+                            <p class="m-2 border-2 border-blue-500 p-2 rounded-lg scale-animation">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Officiis, facere molestiae! Impedit perferendis nihil
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minima.
+                                <i class="fa-solid fa-star float-end text-yellow-500">5</i>
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col w-56 h-auto bg-white border-2 rounded-xl  ml-3 mr-3 scale-animation hover:shadow-5">
+                            <img class="w-full h-44 rounded-t-xl" src="./assetes/images/review-img2.jpg" alt="">
+                            <h1 class="text-lg text-blue-600 font-bold pt-2 text-center">Adam Cole</h1>
+                            <hr class="ml-5 mr-5 border-2 border-black rounded">
+                            <p class="m-2 border-2 border-blue-500 p-2 rounded-lg scale-animation">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Officiis, facere molestiae! Impedit perferendis nihil
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minima.
+                                <i class="fa-solid fa-star float-end text-yellow-500">5</i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" flex max-[540px]:flex-col">
+                        <div
+                            class="flex flex-col w-56 h-auto bg-white border-2 rounded-xl ml-3 mr-3 scale-animation hover:shadow-5 mb-3">
+                            <img class="w-full h-44 rounded-t-lg" src="./assetes/images/review-img3.jpg" alt="">
+                            <h1 class="text-lg text-blue-600 font-bold pt-2 text-center">David Cross</h1>
+                            <hr class="ml-5 mr-5 border-2 border-black rounded">
+                            <p class="m-2 border-2 border-blue-500 p-2 rounded-lg scale-animation">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Officiis, facere molestiae! Impedit perferendis nihil
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minima.
+                                <i class="fa-solid fa-star float-end text-yellow-500">4.5</i>
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col w-56 h-auto bg-white border-2 rounded-xl ml-3 mr-3 scale-animation hover:shadow-5">
+                            <img class="w-full h-44 rounded-t-lg" src="./assetes/images/review-img3.jpg" alt="">
+                            <h1 class="text-lg text-blue-600 font-bold pt-2 text-center">David Cross</h1>
+                            <hr class="ml-5 mr-5 border-2 border-black rounded">
+                            <p class="m-2 border-2 border-blue-500 p-2 rounded-lg scale-animation">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Officiis, facere molestiae! Impedit perferendis nihil
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minima.
+                                <i class="fa-solid fa-star float-end text-yellow-500">4.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="w-full h-56 bg-white relative pt-5">
+        <svg class="w-full h-full absolute right-0 top-0 z-30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320">
+            <path fill="#3b82f6" fill-opacity="1"
+                d="M0,160L40,181.3C80,203,160,245,240,261.3C320,277,400,267,480,272C560,277,640,299,720,293.3C800,288,880,256,960,213.3C1040,171,1120,117,1200,85.3C1280,53,1360,43,1400,37.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+
+        <svg class="w-full h-full absolute left-0 bottom-0 z-20" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#3b82f6" fill-opacity="1"
+                d="M0,192L40,165.3C80,139,160,85,240,53.3C320,21,400,11,480,10.7C560,11,640,21,720,42.7C800,64,880,96,960,138.7C1040,181,1120,235,1200,261.3C1280,288,1360,288,1400,288L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+
+    </div>
+
+    <footer class="w-full h-auto flex flex-col items-center pb-5 bg-blue-500 overflow-hidden">
+        <div class="flex w-[95%] h-full border-b-2 border-white rounded-lg max-[940px]:flex-col">
+            <div class="w-[70%] h-auto flex max-[940px]:w-full max-[602px]:flex-col">
+                <div class="flex flex-col w-1/2 text-white max-[602px]:w-full max-[602px]:text-center">
+                    <h1 class="text-xl font-bold">For any Further Enquires:</h1>
+                    <h1 class="text-lg font-bold mb-2">Contact:</h1>
+                    <hr class="ml-2 mr-2">
+                    <div class="flex mt-3 mb-2">
+                        <i class="fa-solid fa-envelope "></i>
+                        <p class="ml-1">SFAirlines@gmail.com</p>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fa-solid fa-phone "></i>
+                        <p class="ml-1">051-11-111-1</p>
+                    </div>
+                    <div class="flex  mb-2">
+                        <i class="fa-solid fa-globe"></i>
+                        <p class="ml-1">www.SF Airlines.com.pk</p>
+                    </div>
+                    <hr class="ml-2 mr-2">
+                    <h1 class="text-xl font-bold mt-3">About Us.</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis veritatis quo aut, sunt
+                        porro
+                        ipsa Lorem ipsum dolor sit amet consectetur.</p>
+                    <div>
+                        <i class="fa-solid fa-star  text-yellow-500"></i><i
+                            class="fa-solid fa-star text-yellow-500"></i><i
+                            class="fa-solid fa-star text-yellow-500"></i><i
+                            class="fa-solid fa-startext-yellow-500"></i><i class="fa-solid fa-star text-yellow-500"><i
+                                class="fa-regular fa-star-half-stroke text-yellow-500"></i></i>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col w-1/2 text-white max-[602px]:w-full max-[602px]:items-center max-[602px]:text-center">
+                    <h1 class="mb-3 font-bold text-2xl text-center">Payement Methods<i
+                            class="fa-solid fa-money-check-dollar text-green-500 ml-2"></i></h1>
+                    <div class="flex flex-col w-full h-36 p-3">
+                        <div class="w-full h-1/2 flex">
+                            <div class="w-1/4 h-full  rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/visapay.png">
+                            </div>
+                            <div class="w-1/4 h-full  rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/mastercard.png">
+                            </div>
+                            <div class="w-1/4 h-full  rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/nayapay.jpg">
+                            </div>
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/easypasia.jpg">
+                            </div>
+                        </div>
+                        <div class="w-full h-1/2 flex mt-2">
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl" src="./assetes/images/stripe.png">
+                            </div>
+                            <div class="w-1/4 h-full bg-white rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/unionpay.png">
+                            </div>
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl" src="./assetes/images/paypal.png">
+                            </div>
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/banktransfer.png">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="m-2">
+                    <h1 class="text-red-500 font-extrabold">Note:</h1>
+                    <p>For any issues regarding your payments/Funds Transfer to our Airlines.Kindly immediatly reach to
+                        our
+                        <br><a class="text-blue-900 underline cursor-pointer">Customer Care</a>
+                    </p>
+                </div>
+            </div>
+            <div class="w-1/3 h-full  flex p-2 text-white max-[940px]:w-full max-[602px]:mt-5">
+                <div class="w-1/2 h-full ">
+                    <ul class="space-y-2 cursor-pointer">
+                        <h2 class="font-extrabold cursor-default">Company:</h2>
+                        <hr class=" mr-2">
+                        <li class="underline-effect">Contacts</li>
+                        <li class="underline-effect">About</li>
+                        <li class="underline-effect">FAQs</li>
+                        <li class="underline-effect">Blogs</li>
+                        <li class="underline-effect">Available Jobs</li>
+                        <li class="underline-effect">Access Booking</li>
+                        <li class="underline-effect">Terms and Conditions</li>
+                        <li class="underline-effect">Pricvacy Policy</li>
+                    </ul>
+                </div>
+                <div class="w-1/2 h-full">
+                    <ul class="space-y-2 cursor-pointer">
+                        <h2 class=" font-extrabold cursor-default whitespace-nowrap">Airport Transport:</h2>
+                        <hr>
+                        <li class="underline-effect">Luton Airport</li>
+                        <li class="underline-effect">Stansted Airport</li>
+                        <li class="underline-effect">Heathrow Airport</li>
+                        <li class="underline-effect">Gatwick Airport</li>
+                        <li class="underline-effect">Stansted Airport</li>
+                        <li class="underline-effect">Gatwick Airport</li>
+                        <li class="underline-effect">Birmingham Airport</li>
+                        <li class="underline-effect">Taxi Prices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-blue-950">&copy; SF Airlines | All Rights Reserved</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

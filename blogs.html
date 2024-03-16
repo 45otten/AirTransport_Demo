@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://kit.fontawesome.com/362991c868.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assetes/images/favicon.png">
+    <title>SF Airlines | Blogs</title>
+</head>
+
+<body>
+    <nav class="w-full h-20 border-b-8 flex justify-between z-50 bg-white fixed">
+        <img src="./assetes/images/nav-img.gif" alt="">
+
+        <div class="w-full h-20 items-center justify-end mr-3 hidden max-[700px]:flex">
+            <div id="toggleNavOff" class="hidden">
+                <i class="text-blue-600 fa-solid fa-x fa-xl"></i>
+            </div>
+            <div id="toggleNavOn">
+                <i class="text-blue-600 fa-solid fa-bars fa-xl"></i>
+            </div>
+        </div>
+
+        <ul id="toggleNav"
+            class="flex items-center mr-10 bg-white max-[700px]:flex-col max-[700px]:absolute max-[700px]:right-0 max-[700px]:w-56 max-[700px]:mr-2 max-[700px]:mt-20 max-[700px]:rounded-b-2xl  max-[700px]:border-t-0  max-[700px]:border-4">
+
+            <a href="index.html">
+                <li
+                    class="px-3 cursor-pointer hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    Home
+                </li>
+            </a>
+            <a href="booking.html">
+                <li
+                    class="relative px-3 cursor-pointer border-white hover:bg-gradient-to-b from-blue-100 to-blue-500  hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    Booking
+                </li>
+            </a>
+
+            <a href="blogs.html">
+                <li
+                    class=" cursor-pointer border-b-2 border-blue-700  hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    Blogs
+                </li>
+            </a>
+            <a href="aboutus.html">
+                <li
+                    class="px-3 cursor-pointer  border-white hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    About Us</li>
+            </a>
+            <a href="contact.html">
+                <li
+                    class="px-3 cursor-pointer border-white  hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    Contact
+                </li>
+            </a>
+
+
+        </ul>
+    </nav>
+
+    <section class="w-full h-96 bg-[url('./assetes/images/blog.jpg')] bg-cover bg-center bg-fixed">
+        <div class="relative flex items-center justify-end w-full h-full bg-gradient-to-t from-black to-transparent">
+            <svg class="w-full absolute bottom-0 -mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,64L48,96C96,128,192,192,288,197.3C384,203,480,149,576,154.7C672,160,768,224,864,256C960,288,1056,288,1152,277.3C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+            <h1 class="mr-28 text-7xl font-extrabold text-white max-[344px]:mr-0">Blogs.</h1>
+        </div>
+    </section>
+    
+    <!--Blogs-->
+
+    <main class="w-full h-auto bg-white flex justify-center pt-8">
+
+        <!-- blogs section-->
+
+        <section
+            class="w-[95%] p-5 h-auto  flex justify-between max-[870px]:flex-col max-[870px]:items-center max-[450px]:p-0">
+            <div class="w-full hidden max-[870px]:flex flex-col items-center text-center mb-4">
+                <h1 class="text-2xl text-blue-500 mb-4">Recent Posts:</h1>
+                <ul class="space-y-4 cursor-pointer">
+                    <a href="#blog1" class="mt-2 mb-5">
+                        <li class="hover:text-blue-700 mt-2 mb-2">-What We Provide <span
+                                class="text-slate-400 text-sm">Updated on
+                                : Feb 04,2024</span></li>
+                    </a>
+                    <a href="#blog2">
+                        <li class="hover:text-blue-700 mt-2 mb-2">-Reviews Blog <span
+                                class="text-slate-400 text-sm">Updated on :
+                                Jan 3,2024</span></li>
+                    </a>
+                    <a href="#blog3">
+                        <li class="hover:text-blue-700 mt-2 mb-2">-Our Cabbies <span
+                                class="text-slate-400 text-sm">Updated on : Dec 23,2023</span></li>
+                    </a>
+                    <a href="#blog4">
+                        <li class="hover:text-blue-700 mt-2 mb-2">-Public's POV <span
+                                class="text-slate-400 text-sm">Updated on : Dec 10,2023</span></li>
+                    </a>
+                </ul>
+            </div>
+            <hr class="border-blue-500 border-2 rounded w-5/6 mb-6 hidden max-[870px]:inline-block">
+            <div class="w-2/3 h-auto max-[870px]:w-full ">
+
+                <div id="blog1"
+                    class="w-full h-auto flex mt-5 bg-white p-5 rounded-2xl overflow-hidden shadow-6 border-2 hover:shadow-1 light-slide">
+                    <div class="w-32 h-96  overflow-hidden text-end mr-2 max-[550px]:hidden">
+                        <h1 class="text-slate-900">Feb</h1>
+                        <h1 class="text-6xl text-blue-500">04</h1>
+                        <h1>2024</h1>
+                    </div>
+                    <div class="title-image w-full h-full ">
+                        <h1 class="hidden max-[550px]:inline mb-2">Feb <span
+                                class="text-blue-500 text-3xl font-semibold">04</span> 2024</h1>
+                        <div
+                            class="relative w-full h-96 bg-white bg-[url('./assetes/images/blogimg1.webp')] bg-fixed bg-cover bg-center bg- bg-no-repeat">
+                            <div
+                                class="title-image-target absolute w-full h-full bg-gradient-to-t from-black to-transparent flex justify-center items-end opacity-0">
+                                <h1 class="text-white text-7xl font-bold">WHAT WE DO</h1>
+                            </div>
+                        </div>
+                        <div class="w-full p-5">
+                            <p class="text-center text-blue-500 font-bold text-lg">Hello!This is what we provide</p>
+                            <h1 class="text-blue-500 text-center">Why Choose Us</h1>
+                            <hr class="border-black mt-2 mb-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit magnam omnis quo modi
+                                exercitationem fuga commodi cupiditate repellat voluptatum recusandae libero in culpa,
+                                quam eius ipsam. Dolore harum autem illo illum atque cupiditate voluptate nesciunt
+                                exercitationem iste eligendi, eius similique velit id nam itaque beatae amet odit
+                                veniam! Molestias perspiciatis natus accusantium eum tempora quo reprehenderit nulla
+                                tenetur soluta sint Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+                                omnis alias porro architecto magni odio accusamus provident sapiente eveniet atque.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum exercitationem facilis
+                                expedita, doloremque ipsa repellat aspernatur aliquam odit? Enim, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="blog2"
+                    class="w-full h-auto flex mt-5 bg-white p-5 rounded-2xl overflow-hidden shadow-6 border-2 hover:shadow-1">
+
+                    <div class="w-32 h-96  overflow-hidden text-end mr-2  max-[550px]:hidden">
+                        <h1 class="text-slate-900">Jan</h1>
+                        <h1 class="text-6xl text-blue-500">03</h1>
+                        <h1>2024</h1>
+                    </div>
+                    <div class="title-image w-full h-full ">
+                        <h1 class="hidden max-[550px]:inline mb-2">Jan <span
+                                class="text-blue-500 text-3xl font-semibold">03</span> 2024</h1>
+                        <div
+                            class="relative w-full h-96 bg-white bg-[url('./assetes/images/blog-reviews.webp')] bg-fixed bg-cover bg-center bg- bg-no-repeat">
+                            <div
+                                class="title-image-target absolute w-full h-full bg-gradient-to-t from-black to-transparent flex justify-center items-end opacity-0">
+                                <h1 class="text-white text-7xl font-bold">Reviews</h1>
+                            </div>
+                        </div>
+                        <div class="w-full p-5">
+                            <p class="text-center text-blue-500 font-bold text-lg">See What People's review</p>
+                            <h1 class="text-blue-500 text-center">This is how people review us</h1>
+                            <hr class="border-black mt-2 mb-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit magnam omnis quo modi
+                                exercitationem fuga commodi cupiditate repellat voluptatum recusandae libero in culpa,
+                                quam eius ipsam. Dolore harum autem illo illum atque cupiditate voluptate nesciunt
+                                exercitationem iste eligendi, eius similique velit id nam itaque beatae amet odit
+                                veniam! Molestias perspiciatis natus accusantium eum tempora quo reprehenderit nulla
+                                tenetur soluta sint Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+                                omnis alias porro architecto magni odio accusamus provident sapiente eveniet atque.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum exercitationem facilis
+                                expedita, doloremque ipsa repellat aspernatur aliquam odit? Enim, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="blog3"
+                    class="w-full h-auto  flex mt-5 bg-white p-5 rounded-2xl overflow-hidden shadow-6 border-2 hover:shadow-1">
+                    <div class="w-32 h-96 overflow-hidden text-end mr-2 max-[550px]:hidden">
+                        <h1 class="text-slate-900">Dec</h1>
+                        <h1 class="text-6xl text-blue-500">23</h1>
+                        <h1>2023</h1>
+                    </div>
+                    <div class="title-image w-full h-full ">
+                        <h1 class="hidden max-[550px]:inline mb-2">Dec <span
+                                class="text-blue-500 text-3xl font-semibold">23</span> 2023</h1>
+                        <div
+                            class="relative w-full h-96 bg-white bg-[url('./assetes/images/blog-cabbies.jpg')] bg-fixed bg-cover bg-center bg- bg-no-repeat">
+                            <div
+                                class="title-image-target absolute w-full h-full bg-gradient-to-t from-black to-transparent flex justify-center items-end opacity-0">
+                                <h1 class="text-white text-7xl font-bold">Our Cabbies</h1>
+                            </div>
+                        </div>
+                        <div class="w-full p-5">
+                            <p class="text-center text-blue-500 font-bold text-lg">Our Coalition With You</p>
+                            <h1 class="text-blue-500 text-center">How We Treat Our Customer</h1>
+                            <hr class="border-black mt-2 mb-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit magnam omnis quo modi
+                                exercitationem fuga commodi cupiditate repellat voluptatum recusandae libero in culpa,
+                                quam eius ipsam. Dolore harum autem illo illum atque cupiditate voluptate nesciunt
+                                exercitationem iste eligendi, eius similique velit id nam itaque beatae amet odit
+                                veniam! Molestias perspiciatis natus accusantium eum tempora quo reprehenderit nulla
+                                tenetur soluta sint Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+                                omnis alias porro architecto magni odio accusamus provident sapiente eveniet atque.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum exercitationem facilis
+                                expedita, doloremque ipsa repellat aspernatur aliquam odit? Enim, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="blog4"
+                    class="w-full h-auto flex mt-5 bg-white p-5 rounded-2xl overflow-hidden shadow-6 border-2 hover:shadow-1">
+                    <div class="w-32 h-96 overflow-hidden text-end mr-2 max-[550px]:hidden">
+                        <h1 class="text-slate-900">Dec</h1>
+                        <h1 class="text-6xl text-blue-500">10</h1>
+                        <h1>2023</h1>
+                    </div>
+                    <div class="title-image w-full h-full ">
+                        <h1 class="hidden max-[550px]:inline mb-2">Dec <span
+                                class="text-blue-500 text-3xl font-semibold">10</span> 2023</h1>
+                        <div
+                            class="relative w-full h-96 bg-white bg-[url('./assetes/images/blog-publicPov.jpg')] bg-fixed bg-cover bg-center bg- bg-no-repeat">
+                            <div
+                                class="title-image-target absolute w-full h-full bg-gradient-to-t from-black to-transparent flex justify-center items-end opacity-0">
+                                <h1 class="text-white text-7xl font-bold">Public's POV</h1>
+                            </div>
+                        </div>
+                        <div class="w-full p-5">
+                            <p class="text-center text-blue-500 font-bold text-lg">We are the Priority</p>
+                            <h1 class="text-blue-500 text-center">What People say about Us</h1>
+                            <hr class="border-black mt-2 mb-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit magnam omnis quo modi
+                                exercitationem fuga commodi cupiditate repellat voluptatum recusandae libero in culpa,
+                                quam eius ipsam. Dolore harum autem illo illum atque cupiditate voluptate nesciunt
+                                exercitationem iste eligendi, eius similique velit id nam itaque beatae amet odit
+                                veniam! Molestias perspiciatis natus accusantium eum tempora quo reprehenderit nulla
+                                tenetur soluta sint Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+                                omnis alias porro architecto magni odio accusamus provident sapiente eveniet atque.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum exercitationem facilis
+                                expedita, doloremque ipsa repellat aspernatur aliquam odit? Enim, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[31%] h-auto p-5 max-[870px]:w-2/3 max-[870px]:text-center">
+                <div class="max-[870px]:hidden">
+                    <h1 class="text-2xl text-blue-500 mb-4">Recent Posts:</h1>
+                    <ul class="space-y-4 cursor-pointer">
+                        <a href="#blog1" class="mt-2 mb-5">
+                            <li class="hover:text-blue-700 mt-2 mb-2">-What We Provide <span
+                                    class="text-slate-400 text-sm">Updated on
+                                    : Feb 04,2024</span></li>
+                        </a>
+                        <a href="#blog2">
+                            <li class="hover:text-blue-700 mt-2 mb-2">-Reviews Blog <span
+                                    class="text-slate-400 text-sm">Updated on :
+                                    Jan 3,2024</span></li>
+                        </a>
+                        <a href="#blog3">
+                            <li class="hover:text-blue-700 mt-2 mb-2">-Our Cabbies <span
+                                    class="text-slate-400 text-sm">Updated on : Dec 23,2023</span></li>
+                        </a>
+                        <a href="#blog4">
+                            <li class="hover:text-blue-700 mt-2 mb-2">-Public's POV <span
+                                    class="text-slate-400 text-sm">Updated on : Dec 10,2023</span></li>
+                        </a>
+                    </ul>
+                </div>
+                <h1 class="text-2xl text-blue-500 mb-4 mt-4">Follow us on:</h1>
+                <div class="flex justify-center w-full h-14 text-black text-3xl  cursor-pointer">
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="m-2 mt-0 fa-brands fa-facebook hover:text-blue-600"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="m-2 mt-0 fa-brands fa-instagram hover:text-pink-500"></i>
+                    </a>
+                    <a href="https://reddit.com" target="_blank">
+                        <i class="m-2 mt-0 fa-brands fa-reddit hover:text-orange-500"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="m-2 mt-0 fa-brands fa-x-twitter hover:text-slate-800"></i>
+                    </a>
+                </div>
+                <h1 class="font-[Caveat] font-extrabold text-2xl text-center    ">SF Airlines & Transports</h1>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="w-full h-56 bg-white relative pt-5">
+        <svg class="w-full h-full absolute right-0 top-0 z-30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 320">
+            <path fill="#3b82f6" fill-opacity="1"
+                d="M0,160L40,181.3C80,203,160,245,240,261.3C320,277,400,267,480,272C560,277,640,299,720,293.3C800,288,880,256,960,213.3C1040,171,1120,117,1200,85.3C1280,53,1360,43,1400,37.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+
+        <svg class="w-full h-full absolute left-0 bottom-0 z-20" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#3b82f6" fill-opacity="1"
+                d="M0,192L40,165.3C80,139,160,85,240,53.3C320,21,400,11,480,10.7C560,11,640,21,720,42.7C800,64,880,96,960,138.7C1040,181,1120,235,1200,261.3C1280,288,1360,288,1400,288L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+
+    </div>
+
+    <footer class="w-full h-auto flex flex-col items-center pb-5 bg-blue-500 overflow-hidden">
+        <div class="flex w-[95%] h-full border-b-2 border-white rounded-lg max-[940px]:flex-col">
+            <div class="w-[70%] h-auto flex max-[940px]:w-full max-[602px]:flex-col">
+                <div class="flex flex-col w-1/2 text-white max-[602px]:w-full max-[602px]:text-center">
+                    <h1 class="text-xl font-bold">For any Further Enquires:</h1>
+                    <h1 class="text-lg font-bold mb-2">Contact:</h1>
+                    <hr class="ml-2 mr-2">
+                    <div class="flex mt-3 mb-2">
+                        <i class="fa-solid fa-envelope "></i>
+                        <p class="ml-1">SFAirlines@gmail.com</p>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fa-solid fa-phone "></i>
+                        <p class="ml-1">051-11-111-1</p>
+                    </div>
+                    <div class="flex  mb-2">
+                        <i class="fa-solid fa-globe"></i>
+                        <p class="ml-1">www.SF Airlines.com.pk</p>
+                    </div>
+                    <hr class="ml-2 mr-2">
+                    <h1 class="text-xl font-bold mt-3">About Us.</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis veritatis quo aut, sunt
+                        porro
+                        ipsa Lorem ipsum dolor sit amet consectetur.</p>
+                    <div>
+                        <i class="fa-solid fa-star  text-yellow-500"></i><i
+                            class="fa-solid fa-star text-yellow-500"></i><i
+                            class="fa-solid fa-star text-yellow-500"></i><i
+                            class="fa-solid fa-startext-yellow-500"></i><i class="fa-solid fa-star text-yellow-500"><i
+                                class="fa-regular fa-star-half-stroke text-yellow-500"></i></i>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col w-1/2 text-white max-[602px]:w-full max-[602px]:items-center max-[602px]:text-center">
+                    <h1 class="mb-3 font-bold text-2xl text-center">Payement Methods<i
+                            class="fa-solid fa-money-check-dollar text-green-500 ml-2"></i></h1>
+                    <div class="flex flex-col w-full h-36 p-3">
+                        <div class="w-full h-1/2 flex">
+                            <div class="w-1/4 h-full  rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/visapay.png">
+                            </div>
+                            <div class="w-1/4 h-full  rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/mastercard.png">
+                            </div>
+                            <div class="w-1/4 h-full  rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/nayapay.jpg">
+                            </div>
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/easypasia.jpg">
+                            </div>
+                        </div>
+                        <div class="w-full h-1/2 flex mt-2">
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl" src="./assetes/images/stripe.png">
+                            </div>
+                            <div class="w-1/4 h-full bg-white rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/unionpay.png">
+                            </div>
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl" src="./assetes/images/paypal.png">
+                            </div>
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/banktransfer.png">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="m-2">
+                    <h1 class="text-red-500 font-extrabold">Note:</h1>
+                    <p>For any issues regarding your payments/Funds Transfer to our Airlines.Kindly immediatly reach to
+                        our
+                        <br><a class="text-blue-900 underline cursor-pointer">Customer Care</a>
+                    </p>
+                </div>
+            </div>
+            <div class="w-1/3 h-full  flex p-2 text-white max-[940px]:w-full max-[602px]:mt-5">
+                <div class="w-1/2 h-full ">
+                    <ul class="space-y-2 cursor-pointer">
+                        <h2 class="font-extrabold cursor-default">Company:</h2>
+                        <hr class=" mr-2">
+                        <li class="underline-effect">Contacts</li>
+                        <li class="underline-effect">About</li>
+                        <li class="underline-effect">FAQs</li>
+                        <li class="underline-effect">Blogs</li>
+                        <li class="underline-effect">Available Jobs</li>
+                        <li class="underline-effect">Access Booking</li>
+                        <li class="underline-effect">Terms and Conditions</li>
+                        <li class="underline-effect">Pricvacy Policy</li>
+                    </ul>
+                </div>
+                <div class="w-1/2 h-full">
+                    <ul class="space-y-2 cursor-pointer">
+                        <h2 class=" font-extrabold cursor-default whitespace-nowrap">Airport Transport:</h2>
+                        <hr>
+                        <li class="underline-effect">Luton Airport</li>
+                        <li class="underline-effect">Stansted Airport</li>
+                        <li class="underline-effect">Heathrow Airport</li>
+                        <li class="underline-effect">Gatwick Airport</li>
+                        <li class="underline-effect">Stansted Airport</li>
+                        <li class="underline-effect">Gatwick Airport</li>
+                        <li class="underline-effect">Birmingham Airport</li>
+                        <li class="underline-effect">Taxi Prices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-blue-950">&copy; SF Airlines | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

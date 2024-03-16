@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://kit.fontawesome.com/362991c868.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assetes/images/favicon.png">
+    <title>SF | Book Your Ride</title>
+</head>
+
+<body>
+    <nav class="w-full h-20 border-b-8 flex justify-between z-50 bg-white fixed">
+        <img src="./assetes/images/nav-img.gif" alt="">
+
+        <div class="w-full h-20 items-center justify-end mr-3 hidden max-[700px]:flex">
+            <div id="toggleNavOff" class="hidden">
+                <i class="text-blue-600 fa-solid fa-x fa-xl"></i>
+            </div>
+            <div id="toggleNavOn">
+                <i class="text-blue-600 fa-solid fa-bars fa-xl"></i>
+            </div>
+        </div>
+
+        <ul id="toggleNav"
+            class="flex items-center mr-10 bg-white max-[700px]:flex-col max-[700px]:absolute max-[700px]:right-0 max-[700px]:w-56 max-[700px]:mr-2 max-[700px]:mt-20 max-[700px]:rounded-b-2xl  max-[700px]:border-t-0  max-[700px]:border-4">
+
+            <a href="index.html">
+                <li
+                    class="px-3 cursor-pointer hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    Home
+                </li>
+            </a>
+            <a href="booking.html">
+                <li
+                    class="relative px-3 cursor-pointer  border-b-2 border-blue-700 hover:bg-gradient-to-b from-blue-100 to-blue-500  hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    Booking
+                </li>
+            </a>
+            <a href="blogs.html">
+                <li
+                    class=" cursor-pointer border-white hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    Blogs
+                </li>
+            </a>
+            <a href="aboutus.html">
+                <li
+                    class="px-3 cursor-pointer  border-white hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    About Us</li>
+            </a>
+            <a href="contact.html">
+                <li
+                    class="px-3 cursor-pointer border-white  hover:bg-gradient-to-b  from-blue-100 to-blue-500 hover:text-white hover:border-b-2 hover:border-blue-600 p-3 rounded">
+                    Contact
+                </li>
+            </a>
+
+
+        </ul>
+    </nav>
+
+    <main class="w-full h-auto">
+
+        <section
+            class="w-full h-96 bg-[url('./assetes/images/contactpage.webp')] bg-no-repeat bg-fixed bg-cover bg-center">
+            <div
+                class="relative flex items-center justify-end w-full h-full bg-gradient-to-t from-black to-transparent">
+                <svg class="w-full absolute bottom-0 -mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#ffffff" fill-opacity="1"
+                        d="M0,64L48,96C96,128,192,192,288,197.3C384,203,480,149,576,154.7C672,160,768,224,864,256C960,288,1056,288,1152,277.3C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+                <h1 class="mr-40 text-7xl font-extrabold text-white text-center max-[340px]:mr-28">Book Your Ride.</h1>
+            </div>
+        </section>
+
+        <!-- booking section -->
+
+        <section class="flex justify-center items-start w-full h-auto p-16 bg-white max-[680px]:p-2">
+
+            <!--Info-->
+
+            <div
+                class="w-1/4 h-auto bg-blue-50 border-2 border-blue-500 rounded-xl pt-5 pl-5 pr-5 pb-5 max-[980px]:hidden">
+                <h1 class="text-blue-500 text-xl font-bold">Privacy Policy</h1>
+                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illo laborum qui
+                    placeat nisi, doloremque sunt dignissimos, sit nostrum, quisquam quam dolores veritatis. At officia
+                    non nulla labore rem nesciunt accusantium voluptatum </p>
+                <h1 class="text-blue-500 text-xl font-bold mt-4">Terms and Conditions</h1>
+                <p class="text-start">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero officia nemo neque
+                    fugit, vitae blanditiis est alias! Eius odio id sapiente distinctio aliquid dolor quas, voluptas,
+                    accusamus molestiae alias in animi et unde! Excepturi, repellendus consequatur ipsam explicabo
+                    mollitia nostrum. Rerum fugit.</p>
+                <!-- CC -->
+
+                <div
+                    class="slide-full w-full h-56 bg-[url(assetes/images/customer-care-1.jpg)] bg-center bg-cover bg-no-repeat mt-10 rounded-lg cursor-pointer">
+                    <h1 class="text-center"></h1>
+                    <div
+                        class="relative w-full h-full bg-gradient-to-t from-black to-transparent opacity-50 overflow-hidden rounded-lg">
+                        <div
+                            class="slide-up absolute w-full h-full top-3/4 bg-gradient-to-b from-black to-transparent text-center text-white font-bold rounded-lg">
+                            <h1 class="text-white font-extrabold mt-2">Reach Our Customer Care</h1>
+                            <hr class="m-2">
+                            <div class="w-full h-[48%]"></div>
+                            <hr class="m-2">
+                            <h1>Customer Care</h1>
+                            <p class="text-sm ml-2 mr-2">SFairlinesCC@gmai.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="w-3/4 h-auto border-2 rounded-xl ml-5  max-[1152px]:flex  max-[980px]:w-full max-[680px]:ml-0 max-[560px]:flex-col">
+                <div
+                    class="w-full h-auto p-5 flex justify-between max-[1152px]:flex-col max-[1152px]:w-1/2 max-[680px]:pl-0 max-[560px]:w-full">
+
+                    <div
+                        class="w-[32%] h-auto p-5 rounded-lg border-2 border-blue-500  scale-animation cursor-default hover:shadow-3 bg-white max-[1152px]:w-full max-[1152px]:m-2">
+                        <img class="w-full h-auto" src="./assetes/images/cab-default.png" alt="">
+                        <h1 class="text-center font-bold text-2xl">Saloon Toyota</h1>
+                        <hr class="mt-3 border-2 rounded border-black">
+                        <ul>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-rupee-sign text-yellow-500"></i> Price: <span
+                                    class="float-right text-slate-600">RS 3000</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-person text-yellow-500"></i> Pessenger: <span
+                                    class="float-right text-slate-600">4</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-briefcase text-yellow-500"></i> Small luggage: <span
+                                    class="float-right text-slate-600">3</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-cart-flatbed-suitcase text-yellow-500"></i> Big luggage: <span
+                                    class="float-right text-slate-600">2</span></li>
+                        </ul>
+                        <a href="booking-info.html"> 
+                            <div id="carOneModel"
+                                class="mt-2 ske relative flex justify-center text-white bg-gradient-to-r from-blue-600 to-blue-400 p-5 border-2 border-white rounded ske overflow-hidden cursor-pointer ">
+                                Book Cab
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="w-[32%] h-auto p-5 rounded-lg border-2 border-blue-500  scale-animation cursor-default hover:shadow-3 bg-white max-[1152px]:w-full max-[1152px]:m-2">
+                        <img class="w-full h-auto" src="./assetes/images/cab-default.png" alt="">
+                        <h1 class="text-center font-bold text-2xl">Executive Saloon
+                        </h1>
+                        <hr class="mt-3 border-2 rounded border-black">
+                        <ul>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-rupee-sign text-yellow-500"></i> Price: <span
+                                    class="float-right text-slate-600">RS 3000</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-person text-yellow-500"></i> Pessenger: <span
+                                    class="float-right text-slate-600">4</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-briefcase text-yellow-500"></i> Small luggage: <span
+                                    class="float-right text-slate-600">3</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-cart-flatbed-suitcase text-yellow-500"></i> Big luggage: <span
+                                    class="float-right text-slate-600">2</span></li>
+                        </ul>
+                        <a href="booking-info.html"> 
+                            <div id="carOneModel"
+                                class="mt-2 ske relative flex justify-center text-white bg-gradient-to-r from-blue-600 to-blue-400 p-5 border-2 border-white rounded ske overflow-hidden cursor-pointer ">
+                                Book Cab
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="w-[32%] h-auto p-5 rounded-lg border-2 border-blue-500  scale-animation cursor-default hover:shadow-3 bg-white max-[1152px]:w-full max-[1152px]:m-2">
+                        <img class="w-full h-auto" src="./assetes/images/cab-default.png" alt="">
+                        <h1 class="text-center font-bold text-2xl">Business</h1>
+                        <hr class="mt-3 border-2 rounded border-black">
+                        <ul>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-rupee-sign text-yellow-500"></i> Price: <span
+                                    class="float-right text-slate-600">RS 3000</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-person text-yellow-500"></i> Pessenger: <span
+                                    class="float-right text-slate-600">4</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-briefcase text-yellow-500"></i> Small luggage: <span
+                                    class="float-right text-slate-600">3</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-cart-flatbed-suitcase text-yellow-500"></i> Big luggage: <span
+                                    class="float-right text-slate-600">2</span></li>
+                        </ul>
+                        <a href="booking-info.html"> 
+                            <div id="carOneModel"
+                                class="mt-2 ske relative flex justify-center text-white bg-gradient-to-r from-blue-600 to-blue-400 p-5 border-2 border-white rounded ske overflow-hidden cursor-pointer ">
+                                Book Cab
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div
+                    class="w-full h-auto p-5 flex justify-between max-[1152px]:flex-col max-[1152px]:w-1/2  max-[680px]:pl-0 max-[560px]:w-full max-[560px]:">
+                    <div
+                        class="w-[32%] h-auto p-5 rounded-lg border-2 border-blue-500  scale-animation cursor-default hover:shadow-3 bg-white max-[1152px]:w-full max-[1152px]:m-2">
+                        <img class="w-full h-auto" src="./assetes/images/MPV.png" alt="">
+                        <h1 class="text-center font-bold text-2xl">MPV</h1>
+                        <hr class="mt-3 border-2 rounded border-black">
+                        <ul>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-rupee-sign text-yellow-500"></i> Price: <span
+                                    class="float-right text-slate-600">RS 3000</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-person text-yellow-500"></i> Pessenger: <span
+                                    class="float-right text-slate-600">4</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-briefcase text-yellow-500"></i> Small luggage: <span
+                                    class="float-right text-slate-600">3</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-cart-flatbed-suitcase text-yellow-500"></i> Big luggage: <span
+                                    class="float-right text-slate-600">2</span></li>
+                        </ul>
+                        <a href="booking-info.html"> 
+                            <div id="carOneModel"
+                                class="mt-2 ske relative flex justify-center text-white bg-gradient-to-r from-blue-600 to-blue-400 p-5 border-2 border-white rounded ske overflow-hidden cursor-pointer ">
+                                Book Cab
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="w-[32%] h-auto p-5 rounded-lg border-2 border-blue-500  scale-animation cursor-default hover:shadow-3 bg-white max-[1152px]:w-full max-[1152px]:m-2">
+                        <img class="w-full h-auto" src="./assetes/images/bussniess Executive.png" alt="">
+                        <h1 class="text-center font-bold text-2xl">Business Van</h1>
+                        <hr class="mt-3 border-2 rounded border-black">
+                        <ul>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-rupee-sign text-yellow-500"></i> Price: <span
+                                    class="float-right text-slate-600">RS 3000</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-person text-yellow-500"></i> Pessenger: <span
+                                    class="float-right text-slate-600">4</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-briefcase text-yellow-500"></i> Small luggage: <span
+                                    class="float-right text-slate-600">3</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-cart-flatbed-suitcase text-yellow-500"></i> Big luggage: <span
+                                    class="float-right text-slate-600">2</span></li>
+                        </ul>
+                        <a href="booking-info.html"> 
+                            <div id="carOneModel"
+                                class="mt-2 ske relative flex justify-center text-white bg-gradient-to-r from-blue-600 to-blue-400 p-5 border-2 border-white rounded ske overflow-hidden cursor-pointer ">
+                                Book Cab
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="w-[32%] h-auto p-5 rounded-lg border-2 border-blue-500  scale-animation cursor-default hover:shadow-3 bg-white max-[1152px]:w-full max-[1152px]:m-2">
+                        <img class="w-full h-auto" src="./assetes/images/16 seater.png" alt="">
+                        <h1 class="text-center font-bold text-2xl">16 Seater Minibus</h1>
+                        <hr class="mt-3 border-2 rounded border-black">
+                        <ul>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-rupee-sign text-yellow-500"></i> Price: <span
+                                    class="float-right text-slate-600">RS 3000</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-person text-yellow-500"></i> Pessenger: <span
+                                    class="float-right text-slate-600">4</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-briefcase text-yellow-500"></i> Small luggage: <span
+                                    class="float-right text-slate-600">3</span></li>
+                            <li class="border-b-2 border-blue-500 rounded p-1 w-full text-lg mb-2 mt-2"><i
+                                    class="fa-solid fa-cart-flatbed-suitcase text-yellow-500"></i> Big luggage: <span
+                                    class="float-right text-slate-600">2</span></li>
+                        </ul>
+                        <a href="booking-info.html"> 
+                            <div id="carOneModel"
+                                class="mt-2 ske relative flex justify-center text-white bg-gradient-to-r from-blue-600 to-blue-400 p-5 border-2 border-white rounded ske overflow-hidden cursor-pointer ">
+                                Book Cab
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Terms and Conditions/ -->
+
+        <section class="w-full h-auto p-5 flex-col items-center hidden max-[980px]:flex">
+            <h1 class="text-blue-500 text-xl font-bold text-center">Terms and Conditions</h1>
+            <hr>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iste reiciendis
+                voluptatum ea, at fuga iure dicta accusantium in mollitia odit voluptates minus inventore voluptatibus
+                reprehenderit molestiae totam culpa officia nemo laborum esse ullam? Nulla, deleniti sunt veritatis
+                sequi dolor mollitia iste ex rem!</p>
+            <h1 class="text-blue-500 text-xl font-bold">privacy policy</h1>
+            <hr>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iste reiciendis
+                voluptatum ea, at fuga iure dicta accusantium in mollitia odit voluptates minus inventore voluptatibus
+                reprehenderit molestiae totam culpa officia nemo laborum esse ullam? Nulla, deleniti sunt veritatis
+                sequi dolor mollitia iste ex rem!</p>
+        </section>
+
+        <!-- be with us -->
+
+        <section class="w-full h-screen 
+             bg-[url(./assetes/images/carlocation.webp)] bg-fixed bg-cover bg-center bg-no-repeat">
+            <div
+                class="relative w-full h-full bg-gradient-to-t from-black to-transparent flex justify-center items-center">
+                <svg class="absolute top-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#fff" fill-opacity="1"
+                        d="M0,128L48,144C96,160,192,192,288,197.3C384,203,480,181,576,176C672,171,768,181,864,165.3C960,149,1056,107,1152,128C1248,149,1344,235,1392,277.3L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                    </path>
+                </svg>
+
+                <h1 class="text-7xl font-bold font-outline-1 text-transparent text-center">BE WITH US.</h1>
+
+                <svg class="absolute bottom-0
+                " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#fff" fill-opacity="1"
+                        d="M0,128L48,144C96,160,192,192,288,197.3C384,203,480,181,576,176C672,171,768,181,864,165.3C960,149,1056,107,1152,128C1248,149,1344,235,1392,277.3L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="w-full h-56 bg-white relative pt-5">
+        <svg class="w-full h-full absolute right-0 top-0 z-30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 320">
+            <path fill="#3b82f6" fill-opacity="1"
+                d="M0,160L40,181.3C80,203,160,245,240,261.3C320,277,400,267,480,272C560,277,640,299,720,293.3C800,288,880,256,960,213.3C1040,171,1120,117,1200,85.3C1280,53,1360,43,1400,37.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+
+        <svg class="w-full h-full absolute left-0 bottom-0 z-20" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#3b82f6" fill-opacity="1"
+                d="M0,192L40,165.3C80,139,160,85,240,53.3C320,21,400,11,480,10.7C560,11,640,21,720,42.7C800,64,880,96,960,138.7C1040,181,1120,235,1200,261.3C1280,288,1360,288,1400,288L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+
+    </div>
+
+    <footer class="w-full h-auto flex flex-col items-center pb-5 bg-blue-500 overflow-hidden">
+        <div class="flex w-[95%] h-full border-b-2 border-white rounded-lg max-[940px]:flex-col">
+            <div class="w-[70%] h-auto flex max-[940px]:w-full max-[602px]:flex-col">
+                <div class="flex flex-col w-1/2 text-white max-[602px]:w-full max-[602px]:text-center">
+                    <h1 class="text-xl font-bold">For any Further Enquires:</h1>
+                    <h1 class="text-lg font-bold mb-2">Contact:</h1>
+                    <hr class="ml-2 mr-2">
+                    <div class="flex mt-3 mb-2">
+                        <i class="fa-solid fa-envelope "></i>
+                        <p class="ml-1">SFAirlines@gmail.com</p>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fa-solid fa-phone "></i>
+                        <p class="ml-1">051-11-111-1</p>
+                    </div>
+                    <div class="flex  mb-2">
+                        <i class="fa-solid fa-globe"></i>
+                        <p class="ml-1">www.SF Airlines.com.pk</p>
+                    </div>
+                    <hr class="ml-2 mr-2">
+                    <h1 class="text-xl font-bold mt-3">About Us.</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis veritatis quo aut, sunt
+                        porro
+                        ipsa Lorem ipsum dolor sit amet consectetur.</p>
+                    <div>
+                        <i class="fa-solid fa-star  text-yellow-500"></i><i
+                            class="fa-solid fa-star text-yellow-500"></i><i
+                            class="fa-solid fa-star text-yellow-500"></i><i
+                            class="fa-solid fa-startext-yellow-500"></i><i class="fa-solid fa-star text-yellow-500"><i
+                                class="fa-regular fa-star-half-stroke text-yellow-500"></i></i>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col w-1/2 text-white max-[602px]:w-full max-[602px]:items-center max-[602px]:text-center">
+                    <h1 class="mb-3 font-bold text-2xl text-center">Payement Methods<i
+                            class="fa-solid fa-money-check-dollar text-green-500 ml-2"></i></h1>
+                    <div class="flex flex-col w-full h-36 p-3">
+                        <div class="w-full h-1/2 flex">
+                            <div class="w-1/4 h-full  rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/visapay.png">
+                            </div>
+                            <div class="w-1/4 h-full  rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/mastercard.png">
+                            </div>
+                            <div class="w-1/4 h-full  rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/nayapay.jpg">
+                            </div>
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/easypasia.jpg">
+                            </div>
+                        </div>
+                        <div class="w-full h-1/2 flex mt-2">
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl" src="./assetes/images/stripe.png">
+                            </div>
+                            <div class="w-1/4 h-full bg-white rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/unionpay.png">
+                            </div>
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl" src="./assetes/images/paypal.png">
+                            </div>
+                            <div class="w-1/4 h-full rounded-lg mr-2 ml-2">
+                                <img class="w-full h-full overflow-hidden rounded-xl"
+                                    src="./assetes/images/banktransfer.png">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="m-2">
+                    <h1 class="text-red-500 font-extrabold">Note:</h1>
+                    <p>For any issues regarding your payments/Funds Transfer to our Airlines.Kindly immediatly reach to
+                        our
+                        <br><a class="text-blue-900 underline cursor-pointer">Customer Care</a>
+                    </p>
+                </div>
+            </div>
+            <div class="w-1/3 h-full  flex p-2 text-white max-[940px]:w-full max-[602px]:mt-5">
+                <div class="w-1/2 h-full ">
+                    <ul class="space-y-2 cursor-pointer">
+                        <h2 class="font-extrabold cursor-default">Company:</h2>
+                        <hr class=" mr-2">
+                        <li class="underline-effect">Contacts</li>
+                        <li class="underline-effect">About</li>
+                        <li class="underline-effect">FAQs</li>
+                        <li class="underline-effect">Blogs</li>
+                        <li class="underline-effect">Available Jobs</li>
+                        <li class="underline-effect">Access Booking</li>
+                        <li class="underline-effect">Terms and Conditions</li>
+                        <li class="underline-effect">Pricvacy Policy</li>
+                    </ul>
+                </div>
+                <div class="w-1/2 h-full">
+                    <ul class="space-y-2 cursor-pointer">
+                        <h2 class=" font-extrabold cursor-default whitespace-nowrap">Airport Transport:</h2>
+                        <hr>
+                        <li class="underline-effect">Luton Airport</li>
+                        <li class="underline-effect">Stansted Airport</li>
+                        <li class="underline-effect">Heathrow Airport</li>
+                        <li class="underline-effect">Gatwick Airport</li>
+                        <li class="underline-effect">Stansted Airport</li>
+                        <li class="underline-effect">Gatwick Airport</li>
+                        <li class="underline-effect">Birmingham Airport</li>
+                        <li class="underline-effect">Taxi Prices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-blue-950">&copy; SF Airlines | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

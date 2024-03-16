@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    .font-outline-1{
+        -webkit-text-stroke: 2px #fff;
+    }
+    .shadow-1{
+        box-shadow: 0 0 10px blue;
+    }
+    .shadow-2{
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.432) inset;
+    }
+    .shadow-3{
+        box-shadow: 0 0 10px #0000007a;
+    }
+    .shadow-4{
+        box-shadow: 0 0 10px white;
+    }
+    .shadow-5{
+        box-shadow: 0 0 10px #3b82f6;
+    }
+    .shadow-6{
+        box-shadow: 0 0 15px #00000048;
+    }
+    .booking-width{
+        width: 500px;
+    }
+    .inherit{
+        width: inherit;
+        height: inherit;
+    }
+    .h-inherit{
+        height: inherit;
+    }
+    .w-inherit{
+        width: inherit;
+    }
+    .hover1:hover{
+        opacity: 90;
+    }
+    .active{
+        background-image:linear-gradient(to right, #1d4ed8,#6083e4);
+        color: white;
+        border: none;
+    }
+    .hoverbox:hover .boxeffect{
+        opacity: 1;
+    }
+    .font-ProtestRevolution{
+        font-family: "Protest Revolution",sans-serif;
+    }
+    .font-lobster{
+        font-family: "Lobster",sans-serif;
+    }
+    .font-Caveat{
+        font-family: "Caveat",sans-serif;
+    }
+    .bg-gradient-rating1{
+        background-image: linear-gradient(135deg,yellow,blue);
+    }
+    .bg-gradient-rating2{
+        background-image: linear-gradient(135deg,white,blue);
+    }
+    .bg-gradient-rating3{
+        background-image: linear-gradient(135deg,red,blue);
+    }
+    textarea{
+        resize: none;
+    }
+
+}
