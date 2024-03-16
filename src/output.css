@@ -1,11 +1,5 @@
-/*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
-*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&display=swap');
 
-/*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
 
 *,
 ::before,
@@ -2283,4 +2277,215 @@ textarea{
   .max-\[340px\]\:mr-28 {
     margin-right: 7rem;
   }
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins",sans-serif;
+  overflow-x: hidden;
+}
+#pre-loader{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background: #f4f4f4 url('./assetes/images/preloader.gif') no-repeat center center;
+  background-size: 25%;
+}
+.infinite-slider{
+  animation: 25s infinite-slider infinite linear;
+}
+@keyframes infinite-slider {
+  from{
+      transform: translateX(0);
+  }
+  to{
+      transform: translateX(-100%);
+  }
+}
+.infinite-scroller:hover .infinite-slider{
+  animation-play-state: paused;
+}
+.shadow-animation-1{
+  animation: 2s shadow linear infinite alternate;
+}
+@keyframes shadow{
+  0%{
+      box-shadow: 0 0 50px #0000ff80 inset;
+  }
+  100%{
+      box-shadow: 0 0 200px rgba(0, 0, 255) inset;
+  }
+}
+:hover.rotation{
+  animation: 0.5s rotate linear;
+}
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(180deg);
+  }
+}
+.translateEffect{
+  animation: 1s translateEffect ease-in-out;
+}
+@keyframes translateEffect {
+  0%{
+    opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+.scale-animation:hover{
+  animation: 0.5s scale ease-in-out forwards;
+}
+@keyframes scale {
+  0%{
+      transform: scale(1);
+  }
+  100%{
+      transform: scale(1.05);
+  }
+}
+.airportCitySlider:hover .citySlide{
+  animation: 0.9s slideCity ease forwards alternate;
+}
+@keyframes slideCity {
+  0%{
+      transform: translateY(0);
+      opacity: 1;
+  }
+  100%{
+      transform: translateY(100%);
+      opacity: 0;
+  }
+}
+:hover.cityAirportHover{
+  animation: 0.9s shadowSpread ease forwards;
+}
+@keyframes shadowSpread{
+  0%{
+      box-shadow: 0 0 0px rgba(0, 0, 255, 0.192);
+  }
+  100%{
+      box-shadow: 0 0 10px rgba(0, 0, 255, 0.829);
+  }
+}
+.light-slide{
+  animation: 0.9s lightSlider ease-in-out forwards;
+}
+@keyframes lightSlider {
+  0%{
+      transform: rotateY(0%);
+      opacity: 0;
+  }
+  100%{
+      transform: translateY(-2%);
+      opacity: 1;
+  }
+}
+
+.underline-effect{
+  position: relative;
+  overflow: hidden;
+}
+.underline-effect::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-image: linear-gradient(to right,blue,white);
+  opacity: 0;
+}
+:hover.underline-effect::before{
+  animation: 0.5s underlineEffect ease-in-out forwards;
+}
+@keyframes underlineEffect {
+  0%{
+      width: 0;
+  }
+  100%{
+      width: 70%;
+      opacity: 1;
+  }
+
+}
+
+.slide-up{
+  transition: 0.4s all;
+}
+.slide-full:hover .slide-up{
+  top: 0;
+}
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.ske{
+  height:70px ;
+  width:176px ;
+}
+.ske::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;    
+  height: inherit;
+  width: 120px;
+  background-color: rgba(27, 27, 27, 0.1);
+  margin-left: 250px;
+  color: #fff;
+  z-index: 0;
+}
+
+.ske:hover::before{
+  transition: 0.5s ease-in-out;
+  transform:translateX(-220px) skew(30deg);
+}
+
+.proceedBtn{
+  background-image: linear-gradient(to right,#00ff00,rgb(172, 255, 47));
+}
+.proceedBtn i{
+  transition: 0.5s all ;
+}
+.proceedBtn:hover i{
+  opacity: 1;
+  left: 70%;
+}
+.progressBar1{
+  animation:0.9s pg1 ease-in forwards;
+}
+@keyframes pg1 {
+  0%{
+      height: 0;
+  }
+  100%{
+      height: 160px;
+  }
+}
+.progressBar2{
+  animation:0.9s pg2 ease-in forwards;
+}
+@keyframes pg2 {
+  0%{
+      height: 0;
+  }
+  100%{
+      height: 260px;
+  }
+}
+.title-image:hover .title-image-target{
+  opacity: 1;
+  transition: 0.9s all;
 }
