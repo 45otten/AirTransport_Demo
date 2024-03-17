@@ -1,3 +1,50 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const showMapOneBtn = document.getElementById("showMapOne");
+  const showMapTwoBtn = document.getElementById("showMapTwo");
+  const mapOne = document.getElementById("mapOne");
+  const mapTwo = document.getElementById("mapTwo");
+
+  if (showMapOneBtn) {
+      showMapOneBtn.addEventListener("click", function() {
+          toggleMapVisibility(mapOne, showMapOneBtn);
+      });
+  }
+
+  if (showMapTwoBtn) {
+      showMapTwoBtn.addEventListener("click", function() {
+          toggleMapVisibility(mapTwo, showMapTwoBtn);
+      });
+  }
+
+  function toggleMapVisibility(map, button) {
+      if (map.style.display === "none" || map.style.display === "") {
+          map.style.display = "block";
+          button.textContent = "Hide Map";
+          button.style.color='green'
+      } else {
+          map.style.display = "none";
+          button.textContent = "Show Map";
+          button.style.color =""
+      }
+  }
+});
+
+const toBookingPage = document.getElementById('toBookingPage');
+
+if(toBookingPage){
+  document.addEventListener("DOMContentLoaded", function() {
+
+    toBookingPage.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = './booking.html';
+    });
+});
+}
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
   // Get form elements
   var logInMail = document.getElementById("logInMail");
