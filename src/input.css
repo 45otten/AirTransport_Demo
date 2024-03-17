@@ -6,6 +6,9 @@
 
 
 @layer base{
+  body{
+    font-family: 'Poppins',sans-serif;
+  }
     .font-outline-1{
         -webkit-text-stroke: 2px #fff;
     }

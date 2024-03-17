@@ -119,7 +119,7 @@
                                     id="currentTime"></span></p>
                         </div>
                         <form class="flex justify-between w-full p-5  rounded-xl max-[600px]:flex-col" action="date/time">
-                            <div class="flex flex-col w-[49%] max-[600px]:w-full">
+                            <div class="flex flex-col w-[49%] max-[600px]:w-full max-[]:">
                                 <label class="text-xl" for="#">Pick up date<span class="text-red-500">*</span></label>
                                 <input
                                     class="p-2 rounded-xl border-2 border-blue-300 focus:border-blue-500 focus outline-none"
@@ -238,21 +238,23 @@
                         <h1 class="capitalize text-3xl text-blue-500 font-bold mb-2">Payment Method:</h1>
                         <form class="flex justify-between w-full  rounded-xl max-[600px]:flex-col max-[600px]:space-y-2"
                             action="paYment">
-
-                            <div class="w-1/3 h-7 flex items-center max-[600px]:w-full">
-                                <input id="creditCard" type="radio" value="creditCard" name="paYment">
-                                <label class="ml-2" for="creditCard">Credit Card</label>                             
+                            <div class="w-full pl-5">
+                                <div class="w-1/3 h-7 flex items-center max-[600px]:w-full">
+                                    <input id="creditCard" type="radio" value="creditCard" name="paYment">
+                                    <label class="ml-2" for="creditCard">Credit Card</label>                             
+                                </div>
+    
+                                <div class="w-1/3 h-7 flex items-center max-[600px]:w-full">
+                                    <input id="payPal" type="radio" value="Paypal" name="paYment">
+                                    <label class="ml-2" for="payPal">Paypal</label>
+                                </div>
+    
+                                <div class="w-1/3 h-7 flex items-center max-[600px]:w-full">
+                                    <input id="cash" type="radio" value="cash" name="paYment">
+                                    <label class="ml-2" for="cash">Cash</label>
+                                </div>
                             </div>
 
-                            <div class="w-1/3 h-7 flex items-center max-[600px]:w-full">
-                                <input id="payPal" type="radio" value="Paypal" name="paYment">
-                                <label class="ml-2" for="payPal">Paypal</label>
-                            </div>
-
-                            <div class="w-1/3 h-7 flex items-center max-[600px]:w-full">
-                                <input id="cash" type="radio" value="cash" name="paYment">
-                                <label class="ml-2" for="cash">Cash</label>
-                            </div>
                         </form>
                         <button id="bookingFormSumbit" type="submit"
                             class="mt-2 ske relative flex justify-center text-white bg-gradient-to-r from-blue-500 to-blue-300 p-5 border-2 border-white rounded ske overflow-hidden cursor-pointer mb-3">
@@ -367,11 +369,13 @@
                         </div>
                     </div>
                     <hr class="m-2">
-                    <h1 class="text-red-500 font-extrabold">Note:</h1>
-                    <p>For any issues regarding your payments/Funds Transfer to our Airlines.Kindly immediatly reach to
-                        our
-                        <br><a class="text-blue-900 underline cursor-pointer">Customer Care</a>
-                    </p>
+                    <div class="w-full p-1 border-2 border-blue-600 rounded-xl text-center mt-2 mb-2 bg-blue-400">
+                        <h1 class="text-blue-700 font-extrabold">Note:</h1>
+                        <p>For any issues regarding your payments/Funds Transfer to our Airlines.Kindly immediatly reach to
+                            our
+                            <br><a class="text-blue-900 underline cursor-pointer">Customer Care</a>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="w-1/3 h-full  flex p-2 text-white max-[940px]:w-full max-[602px]:mt-5">
