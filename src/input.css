@@ -30,6 +30,9 @@
     .shadow-6{
         box-shadow: 0 0 15px #00000048;
     }
+    .shadow-7{
+      box-shadow: 0 0 5px #2525ffad inset;
+    }
     .booking-width{
         width: 500px;
     }
@@ -271,6 +274,34 @@
       .title-image:hover .title-image-target{
         opacity: 1;
         transition: 0.9s all;
+      }
+      .translateOne{
+        animation: 0.9s translateOne ease-in-out forwards;
+        opacity: 0;
+      }
+      @keyframes translateOne {
+        0%{
+          top: 0;
+          opacity: 0;
+        }
+        100%{
+          top: 150px;
+          opacity: 1;
+        }
+      }
+      .translateTwo{
+        animation: 0.7s translateTwo ease-in-out forwards;
+        opacity: 0;
+      }
+      @keyframes translateTwo {
+        0%{
+          top: 0;
+          opacity: 0;
+        }
+        100%{
+          top: 68px;
+          opacity: 1;
+        }
       }
 
 }

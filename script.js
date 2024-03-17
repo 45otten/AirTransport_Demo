@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
       passWarn.classList.add('hidden');
   }
 
+if(logInBtn)
+
   logInBtn.addEventListener('click', function(event) {
       event.preventDefault();
       validateForm();
@@ -36,9 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 
-  logInMail.addEventListener('input', validateForm);
-  logInPass.addEventListener('input', validateForm);
-  logInConfirmPass.addEventListener('input', validateForm);
+
+  if(logInMail){
+    logInMail.addEventListener('input', validateForm);
+    logInPass.addEventListener('input', validateForm);
+    logInConfirmPass.addEventListener('input', validateForm);
+  }
+
 
   validateForm();
 });
@@ -59,58 +65,47 @@ document.addEventListener('DOMContentLoaded', function() {
   var payPalRadio = document.getElementById("payPal");
   var cashRadio = document.getElementById("cash");
   var confirmButton = document.querySelector('.confirm-button');
+  var translateOne = document.getElementById('translateOne');
+  var translateTwo = document.getElementById('translateTwo');
 
-  // Function to validate the form
   function validateForm() {
-      // Reset validation classes
       resetValidationClasses();
 
-      // Flag to track form validity
       var isValid = true;
 
-      // Validate Pick-up date
       if (pickUpDateInput.value === "") {
           isValid = false;
           showError(pickUpDateInput, "Please select a pick-up date.");
       }
 
-      // Validate Pick-up time
       if (pickUpTimeInput.value === "") {
           isValid = false;
           showError(pickUpTimeInput, "Please select a pick-up time.");
       }
 
-      // Validate Pick-up and Drop-off locations
       if (pickUpLocationSelect.value === dropOffLocationSelect.value) {
           isValid = false;
           showError(dropOffLocationSelect, "Pick-up and drop-off locations should not be the same.");
       }
 
-      // Validate Passenger's Name
       if (passengerNameInput.value.trim() === "") {
           isValid = false;
           showError(passengerNameInput, "Please enter the passenger's name.");
       }
 
-      // Validate Email
       if (emailInput.value.trim() === "") {
           isValid = false;
           showError(emailInput, "Please enter your email address.");
       }
-
-      // Validate Phone Number
       if (phoneNumberInput.value.trim() === "") {
           isValid = false;
           showError(phoneNumberInput, "Please enter your phone number.");
       }
-
-      // Validate Address
       if (addressInput.value.trim() === "") {
           isValid = false;
           showError(addressInput, "Please enter your address.");
       }
 
-      // Validate Payment Method
       if (!creditCardRadio.checked && !payPalRadio.checked && !cashRadio.checked) {
           isValid = false;
           showError(document.querySelector('.payment-method'), "Please select a payment method.");
@@ -119,7 +114,6 @@ document.addEventListener('DOMContentLoaded', function() {
       return isValid;
   }
 
-  // Function to reset validation classes
   function resetValidationClasses() {
       var errorMessages = document.querySelectorAll('.error-message');
       errorMessages.forEach(function(errorMessage) {
@@ -132,48 +126,54 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 
-  // Function to show error message
   function showError(inputField, message) {
       var errorMessage = inputField.nextElementSibling;
       errorMessage.textContent = message;
       errorMessage.classList.remove('hidden');
       inputField.classList.add('border-red-500');
   }
-
-  // Event listener for form submission
+if(confirmButton)
   confirmButton.addEventListener('click', function(event) {
       event.preventDefault();
       
-      // Validate the form
       var isValid = validateForm();
-
-      // If the form is valid, proceed with submission
-      if (isValid) {
-          // Proceed with form submission
-          console.log("Form submitted successfully.");
+      function displayId(){
+        translateOne.classList.add('flex','translateOne')
+        translateOne.classList.remove('hidden')
+        translateTwo.classList.add('flex','translateTwo')
+        translateTwo.classList.remove('hidden')
       }
+
+      if (isValid) {
+          console.log("Form submitted successfully.");
+           displayId();
+        }
   });
 });
 
 
-window.onload = function() {
-  const slider = document.querySelector('.infinite-slider');
-  const slides = document.querySelectorAll('.infinite-slider h3');
-  const slideWidth = slides[0].offsetWidth;
-  const totalSlides = slides.length;
+if(window.onload){
 
-  let currentIndex = 0;
-
-  function moveSlides() {
-    currentIndex++;
-    if (currentIndex === totalSlides) {
-      currentIndex = 0;
+  window.onload = function() {
+    const slider = document.querySelector('.infinite-slider');
+    const slides = document.querySelectorAll('.infinite-slider h3');
+    const slideWidth = slides[0].offsetWidth;
+    const totalSlides = slides.length;
+  
+    let currentIndex = 0;
+  
+    function moveSlides() {
+      currentIndex++;
+      if (currentIndex === totalSlides) {
+        currentIndex = 0;
+      }
+      const offset = -currentIndex * slideWidth;
+      slider.style.transform = `translateX(${offset}px)`;
     }
-    const offset = -currentIndex * slideWidth;
-    slider.style.transform = `translateX(${offset}px)`;
-  }
-  setInterval(moveSlides, 500); 
-};
+    setInterval(moveSlides, 500); 
+  };
+}
+
 
 
 let toggleNav = document.getElementById('toggleNav');
