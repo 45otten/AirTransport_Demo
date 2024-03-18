@@ -116,18 +116,18 @@
                 <div
                     class="w-1/3 h-auto  max-[950px]:w-full  max-[950px]:flex  max-[950px]:justify-center max-[950px]:mt-5">
 
-                    <form action="#" class="p-5 w-5/6 max-[950px]:p-2 max-[950px]:w-full">
+                    <form action="#" class="w-5/6 max-[950px]:p-2 max-[950px]:w-full">
                         <h1 class="text-center text-4xl font-semibold">Get<span class="text-blue-500">Quote</span></h1>
                         <div class="flex flex-col mt-3">
                             <div class=" flex mt-2 mb-2">
                                 <select 
-                                    class="p-2 rounded-l-xl border-b-2 border-blue-400 focus:outline-none focus:border-blue-500 w-3/4 bg-white">
+                                    class="p-1 rounded-l-xl border-b-2 border-blue-400 focus:outline-none focus:border-blue-500 w-3/4 bg-white">
                                     <option value="" selected disabled>Pick-Up</option>
                                     <option value="">Islamabad</option>
                                     <option value="">Jehlum</option>
                                     <option value="">Multan</option>
                                 </select>
-                                <div id="showMapOne" class="flex justify-center items-center w-1/4 text-blue-500 border-b-2 border-blue-400 cursor-pointer rounded-r-xl"><p>Show Map</p></div>
+                                <div id="showMapOne" class="flex justify-center items-center w-16 text-blue-500 border-b-2 border-blue-400 cursor-pointer rounded-r-xl whitespace-nowrap"><p>Show Map</p></div>
                             </div>
                             <div id="mapOne" class="hidden w-full h-24 mt-2 mb-2 overflow-hidden rounded-xl border-2 border-blue-500">
                                 <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26610.540034183203!2d73.05158455!3d33.519129750000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1710699822763!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -137,13 +137,13 @@
                         <div class="flex flex-col mt-2 mb-2">
                             <div class=" flex">
                                 <select 
-                                    class="p-2 rounded-l-xl border-b-2 border-blue-400 focus:outline-none focus:border-blue-500 w-3/4 bg-white">
+                                    class="p-1 rounded-l-xl border-b-2 border-blue-400 focus:outline-none focus:border-blue-500 w-3/4 bg-white">
                                     <option value="" selected disabled>Drop-Off</option>
                                     <option value="">Islamabad</option>
                                     <option value="">Jehlum</option>
                                     <option value="">Multan</option>
                                 </select>
-                                <div id="showMapTwo" class="flex justify-center items-center w-1/4 text-blue-500 border-b-2 border-blue-400 cursor-pointer rounded-r-xl"><p>Show Map</p></div>
+                                <div id="showMapTwo" class="flex justify-end items-center w-16 text-blue-500 border-b-2 border-blue-400 cursor-pointer rounded-r-xl whitespace-nowrap "><p>Show Map</p></div>
                             </div>
 
                             <div id="mapTwo" class="hidden w-full h-24 mt-2 mb-2 overflow-hidden rounded-xl border-2 border-blue-500">
@@ -162,6 +162,11 @@
                                 </button>
                             </a>
                             
+                        </div>
+                        <div class="full h-36 flex justify-center ">
+                            <div class="w-16 h-full">
+                                <img class="w-full h-full" src="./assetes/images/get_quote.png" alt="">
+                            </div>
                         </div>
                     </form>
 

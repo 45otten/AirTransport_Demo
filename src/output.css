@@ -1915,6 +1915,9 @@ swiper-slide img {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.hover\:box-decoration-clone:hover {
+  box-decoration-break: clone;
+}
 
 .focus\:border-blue-500:focus{
   --tw-border-opacity: 1;
@@ -2372,7 +2375,7 @@ swiper-slide img {
       width: 83.3333%;
     }
   }
-  
+
   .max-\[540px\]\:flex-col{
     flex-direction: column;
   }
