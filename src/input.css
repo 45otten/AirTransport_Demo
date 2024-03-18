@@ -303,5 +303,15 @@
           opacity: 1;
         }
       }
+      @media (max-width:540px){
+       .reviewBox{
+        width: 100%; 
+      } 
+      }
+      @media (max-width:540px){
+        .reviewBoxC{
+          width: 100px;
+        }
+      }
 
 }

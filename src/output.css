@@ -2367,6 +2367,12 @@ swiper-slide img {
     margin-right: 6rem;
   }
 
+  @media (max-width: 540px){
+    .max-\[540px\]\:w-5\/6{
+      width: 83.3333%;
+    }
+  }
+  
   .max-\[540px\]\:flex-col{
     flex-direction: column;
   }
